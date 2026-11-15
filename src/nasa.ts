@@ -41,11 +41,13 @@ export interface LinkStatusInfo {
 }
 
 const SNAPSHOT_STORAGE_KEY = 'anrs_nasa_snapshot_v1';
-const DONKI_STORAGE_KEY = 'anrs_nasa_donki_live_v2';
+const HORIZONS_LIVE_PREFIX = 'anrs_horizons_live_v1_';
+const DONKI_LIVE_KEY = 'anrs_donki_live_v3';
 const LIVE_TIMEOUT_MS = 5000;
 const BASELINE_MISSION_DAY = 142;
 
 let memorySnapshot: NasaSnapshot | null = null;
+const memoryHorizonsLive = new Map<string, { fetchedAt: string; entry: EphemerisEntry }>();
 let memoryDonkiLive: { count: number; fetchedAt: string } | null | undefined = undefined;
 
 /**
@@ -73,10 +75,22 @@ export function getLinkStatus(angleDeg: number): LinkStatusInfo {
   };
 }
 
-function getTargetUtcDate(missionDay: number, now: Date = new Date()): string {
-  const dayOffset = missionDay - BASELINE_MISSION_DAY;
-  const utcMidnight = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + dayOffset);
+function getUtcDateWithOffset(offsetDays: number, now: Date = new Date()): string {
+  const utcMidnight = Date.UTC(
+    now.getUTCFullYear(),
+    now.getUTCMonth(),
+    now.getUTCDate() + offsetDays,
+  );
   return new Date(utcMidnight).toISOString().slice(0, 10);
+}
+
+function formatLiveLabel(fetchedAtIso: string): string {
+  const hhmm = fetchedAtIso.length >= 16 ? fetchedAtIso.slice(11, 16) : '00:00';
+  return `Live NASA data (fetched ${hhmm} UTC)`;
+}
+
+function formatSnapshotLabel(snapshotDate: string): string {
+  return `NASA data snapshot (${snapshotDate})`;
 }
 
 function readSessionJson<T>(key: string): T | null {
@@ -123,58 +137,110 @@ async function loadSnapshot(): Promise<NasaSnapshot> {
   return data;
 }
 
-/**
- * Attempts live NASA DONKI (SEP + GST, which allow CORS) with a 5s timeout.
- * JPL Horizons does not send Access-Control-Allow-Origin, so ephemeris uses the offline snapshot.
- */
-async function tryLiveDonkiCount(): Promise<{ count: number; fetchedAt: string } | null> {
+async function tryLiveHorizons(
+  targetDate: string,
+  stopDate: string,
+): Promise<{ fetchedAt: string; entry: EphemerisEntry } | null> {
+  const mem = memoryHorizonsLive.get(targetDate);
+  if (mem) return mem;
+
+  const cacheKey = `${HORIZONS_LIVE_PREFIX}${targetDate}`;
+  const cached = readSessionJson<{ fetchedAt: string; entry: EphemerisEntry }>(cacheKey);
+  if (cached && cached.entry && typeof cached.entry.oneWayDelayMin === 'number') {
+    memoryHorizonsLive.set(targetDate, cached);
+    return cached;
+  }
+
+  try {
+    const baseUrl = import.meta.env.BASE_URL ?? '/';
+    const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+    const url = `${normalizedBase}api/horizons?start=${encodeURIComponent(targetDate)}&stop=${encodeURIComponent(stopDate)}`;
+
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => controller.abort(), LIVE_TIMEOUT_MS);
+
+    try {
+      const res = await fetch(url, { signal: controller.signal });
+      if (!res.ok) return null;
+
+      const contentType = res.headers.get('content-type') ?? '';
+      if (!contentType.includes('application/json')) return null;
+
+      const json = (await res.json()) as {
+        fetchedAt?: string;
+        rows?: EphemerisEntry[];
+      };
+
+      const rows = Array.isArray(json.rows) ? json.rows : [];
+      const entry = rows.find((r) => r.date === targetDate) ?? rows[0];
+      if (!entry || typeof entry.oneWayDelayMin !== 'number') return null;
+
+      const result = {
+        fetchedAt: typeof json.fetchedAt === 'string' ? json.fetchedAt : new Date().toISOString(),
+        entry,
+      };
+      memoryHorizonsLive.set(targetDate, result);
+      writeSessionJson(cacheKey, result);
+      return result;
+    } finally {
+      window.clearTimeout(timer);
+    }
+  } catch {
+    return null;
+  }
+}
+
+async function tryLiveDonki(): Promise<{ count: number; fetchedAt: string } | null> {
   if (memoryDonkiLive !== undefined) return memoryDonkiLive;
 
-  const cached = readSessionJson<{ count: number; fetchedAt: string }>(DONKI_STORAGE_KEY);
+  const cached = readSessionJson<{ count: number; fetchedAt: string }>(DONKI_LIVE_KEY);
   if (cached && typeof cached.count === 'number') {
     memoryDonkiLive = cached;
     return cached;
   }
 
   try {
-    const end = new Date();
-    const start = new Date(end.getTime() - 30 * 24 * 60 * 60 * 1000);
-    const startDate = start.toISOString().slice(0, 10);
-    const endDate = end.toISOString().slice(0, 10);
+    const startDate = getUtcDateWithOffset(-30);
+    const endDate = getUtcDateWithOffset(0);
+    const baseUrl = import.meta.env.BASE_URL ?? '/';
+    const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 
     const controller = new AbortController();
     const timer = window.setTimeout(() => controller.abort(), LIVE_TIMEOUT_MS);
 
     try {
-      const [sepRes, gstRes] = await Promise.all([
-        fetch(
-          `https://api.nasa.gov/DONKI/SEP?startDate=${startDate}&endDate=${endDate}&api_key=DEMO_KEY`,
-          { signal: controller.signal },
+      const feeds = ['FLR', 'SEP', 'GST'] as const;
+      const responses = await Promise.all(
+        feeds.map((type) =>
+          fetch(
+            `${normalizedBase}api/donki?type=${type}&startDate=${startDate}&endDate=${endDate}`,
+            { signal: controller.signal },
+          ).catch(() => null),
         ),
-        fetch(
-          `https://api.nasa.gov/DONKI/GST?startDate=${startDate}&endDate=${endDate}&api_key=DEMO_KEY`,
-          { signal: controller.signal },
-        ),
-      ]);
+      );
 
-      if (!sepRes.ok && !gstRes.ok) {
+      let anyOk = false;
+      let count = 0;
+
+      for (const res of responses) {
+        if (!res || !res.ok) continue;
+        const ct = res.headers.get('content-type') ?? '';
+        if (!ct.includes('application/json')) continue;
+        const json = (await res.json()) as { count?: number };
+        if (typeof json.count === 'number') {
+          anyOk = true;
+          count += json.count;
+        }
+      }
+
+      if (!anyOk) {
         memoryDonkiLive = null;
         return null;
       }
 
-      let count = 0;
-      if (sepRes.ok) {
-        const sepData = (await sepRes.json()) as unknown;
-        if (Array.isArray(sepData)) count += sepData.length;
-      }
-      if (gstRes.ok) {
-        const gstData = (await gstRes.json()) as unknown;
-        if (Array.isArray(gstData)) count += gstData.length;
-      }
-
       const result = { count, fetchedAt: new Date().toISOString() };
       memoryDonkiLive = result;
-      writeSessionJson(DONKI_STORAGE_KEY, result);
+      writeSessionJson(DONKI_LIVE_KEY, result);
       return result;
     } finally {
       window.clearTimeout(timer);
@@ -186,43 +252,54 @@ async function tryLiveDonkiCount(): Promise<{ count: number; fetchedAt: string }
 }
 
 /**
- * Fetches Earth-spacecraft link telemetry for the current UTC date (+ mission day advance).
- * - Ephemeris (JPL Horizons): served from offline backup snapshot because ssd.jpl.nasa.gov blocks browser CORS.
- * - Space weather (NASA DONKI SEP + GST): attempted live with 5s timeout, falling back to offline backup snapshot.
+ * Fetches Earth-spacecraft link telemetry for the current UTC date (+ simulated mission day offset).
+ * Attempts live calls via the stateless /api/horizons and /api/donki proxy (5s timeout, session cache),
+ * falling back cleanly to public/nasa-snapshot.json if unavailable.
  */
 export async function getEarthLink(missionDay: number): Promise<EarthLinkData> {
-  const snapshot = await loadSnapshot();
-  const liveDonki = await tryLiveDonkiCount();
+  const dayOffset = missionDay - BASELINE_MISSION_DAY;
+  const targetDate = getUtcDateWithOffset(dayOffset);
+  const stopDate = getUtcDateWithOffset(dayOffset + 2);
 
-  const targetDate = getTargetUtcDate(missionDay);
-  const ephemeris = Array.isArray(snapshot.ephemeris) ? snapshot.ephemeris : [];
-  let entry = ephemeris.find((row) => row.date === targetDate) ?? null;
-
-  if (!entry && ephemeris.length > 0) {
-    const offset = Math.max(0, missionDay - BASELINE_MISSION_DAY);
-    entry = ephemeris[offset % ephemeris.length];
-  }
+  const [snapshot, liveHorizons, liveDonki] = await Promise.all([
+    loadSnapshot(),
+    tryLiveHorizons(targetDate, stopDate),
+    tryLiveDonki(),
+  ]);
 
   const snapshotDate =
     typeof snapshot.fetchedAt === 'string' && snapshot.fetchedAt.length >= 10
       ? snapshot.fetchedAt.slice(0, 10)
       : 'unknown date';
 
-  const ephemerisLabel = `Snapshot (offline backup), ${snapshotDate}`;
+  let ephemerisEntry: EphemerisEntry | null = liveHorizons?.entry ?? null;
+  if (!ephemerisEntry) {
+    const ephemeris = Array.isArray(snapshot.ephemeris) ? snapshot.ephemeris : [];
+    ephemerisEntry = ephemeris.find((row) => row.date === targetDate) ?? null;
+    if (!ephemerisEntry && ephemeris.length > 0) {
+      const idx = Math.max(0, dayOffset) % ephemeris.length;
+      ephemerisEntry = ephemeris[idx];
+    }
+  }
+
+  const ephemerisOrigin: DataOriginKind = liveHorizons ? 'live' : 'snapshot';
+  const ephemerisLabel = liveHorizons
+    ? formatLiveLabel(liveHorizons.fetchedAt)
+    : formatSnapshotLabel(snapshotDate);
+
   const solarOrigin: DataOriginKind = liveDonki ? 'live' : 'snapshot';
-  const solarDate = liveDonki ? liveDonki.fetchedAt.slice(0, 10) : snapshotDate;
   const solarLabel = liveDonki
-    ? `Live NASA data (${solarDate})`
-    : `Snapshot (offline backup), ${solarDate}`;
+    ? formatLiveLabel(liveDonki.fetchedAt)
+    : formatSnapshotLabel(snapshotDate);
 
   return {
-    oneWayDelayMin: entry
-      ? entry.oneWayDelayMin
+    oneWayDelayMin: ephemerisEntry
+      ? ephemerisEntry.oneWayDelayMin
       : typeof snapshot.oneWayDelayMin === 'number'
         ? snapshot.oneWayDelayMin
         : 0,
-    sunEarthMarsAngleDeg: entry
-      ? entry.sunEarthMarsAngleDeg
+    sunEarthMarsAngleDeg: ephemerisEntry
+      ? ephemerisEntry.sunEarthMarsAngleDeg
       : typeof snapshot.sunEarthMarsAngleDeg === 'number'
         ? snapshot.sunEarthMarsAngleDeg
         : 0,
@@ -231,15 +308,13 @@ export async function getEarthLink(missionDay: number): Promise<EarthLinkData> {
       : typeof snapshot.solarEvents30d === 'number'
         ? snapshot.solarEvents30d
         : null,
-    fetchedAt: typeof snapshot.fetchedAt === 'string' ? snapshot.fetchedAt : 'Unavailable',
-    ephemerisDate: entry?.date ?? targetDate,
-    ephemerisOrigin: 'snapshot',
+    fetchedAt: liveHorizons?.fetchedAt ?? snapshot.fetchedAt ?? 'Unavailable',
+    ephemerisDate: ephemerisEntry?.date ?? targetDate,
+    ephemerisOrigin,
     ephemerisLabel,
     solarOrigin,
     solarLabel,
-    source: liveDonki
-      ? `JPL Horizons: ${ephemerisLabel} · DONKI: ${solarLabel}`
-      : ephemerisLabel,
+    source: ephemerisLabel,
     placeholder: Boolean(snapshot.placeholder),
   };
 }

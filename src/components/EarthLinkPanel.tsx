@@ -5,6 +5,7 @@ import { getLinkStatus, type EarthLinkData } from '../nasa';
 
 interface EarthLinkPanelProps {
   mission: MissionType;
+  missionDay: number;
   data: EarthLinkData | null;
   loading: boolean;
   error: string | null;
@@ -19,6 +20,7 @@ function formatUtcDate(iso: string): string {
 
 export function EarthLinkPanel({
   mission,
+  missionDay,
   data,
   loading,
   error,
@@ -69,7 +71,10 @@ export function EarthLinkPanel({
             <span className="text-xs font-medium text-[#A9B4CC]">· NASA data</span>
           </div>
           {data && (
-            <div className="mt-1 space-y-0.5">
+            <div className="mt-1 space-y-1">
+              <p className="font-mono text-xs text-[#A9B4CC]">
+                Mission day {missionDay} (simulated)
+              </p>
               <p className="font-mono text-xs text-[#A9B4CC]">
                 Ephemeris date (UTC): {data.ephemerisDate}
               </p>
