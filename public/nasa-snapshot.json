@@ -1,0 +1,4784 @@
+{
+  "placeholder": false,
+  "fetchedAt": "2026-11-15T11:55:30.909Z",
+  "source": "NASA data snapshot, 2026-11-15",
+  "horizonRange": {
+    "startDate": "2026-11-15",
+    "stopDate": "2029-01-15"
+  },
+  "oneWayDelayMin": 10.94,
+  "sunEarthMarsAngleDeg": 87.31,
+  "solarEvents30d": 1,
+  "donki": {
+    "windowStart": "2026-10-16",
+    "windowEnd": "2026-11-15",
+    "counts": {
+      "flr": null,
+      "sep": 0,
+      "gst": 1
+    },
+    "unavailableFeeds": [
+      "FLR (HTTP 404)"
+    ]
+  },
+  "ephemeris": [
+    {
+      "date": "2026-11-15",
+      "deltaAu": 1.3159,
+      "oneWayDelayMin": 10.94,
+      "sunEarthMarsAngleDeg": 87.31
+    },
+    {
+      "date": "2026-11-16",
+      "deltaAu": 1.3073,
+      "oneWayDelayMin": 10.87,
+      "sunEarthMarsAngleDeg": 87.87
+    },
+    {
+      "date": "2026-11-17",
+      "deltaAu": 1.2988,
+      "oneWayDelayMin": 10.8,
+      "sunEarthMarsAngleDeg": 88.43
+    },
+    {
+      "date": "2026-11-18",
+      "deltaAu": 1.2902,
+      "oneWayDelayMin": 10.73,
+      "sunEarthMarsAngleDeg": 89
+    },
+    {
+      "date": "2026-11-19",
+      "deltaAu": 1.2816,
+      "oneWayDelayMin": 10.66,
+      "sunEarthMarsAngleDeg": 89.57
+    },
+    {
+      "date": "2026-11-20",
+      "deltaAu": 1.273,
+      "oneWayDelayMin": 10.59,
+      "sunEarthMarsAngleDeg": 90.15
+    },
+    {
+      "date": "2026-11-21",
+      "deltaAu": 1.2644,
+      "oneWayDelayMin": 10.52,
+      "sunEarthMarsAngleDeg": 90.73
+    },
+    {
+      "date": "2026-11-22",
+      "deltaAu": 1.2558,
+      "oneWayDelayMin": 10.44,
+      "sunEarthMarsAngleDeg": 91.32
+    },
+    {
+      "date": "2026-11-23",
+      "deltaAu": 1.2471,
+      "oneWayDelayMin": 10.37,
+      "sunEarthMarsAngleDeg": 91.91
+    },
+    {
+      "date": "2026-11-24",
+      "deltaAu": 1.2384,
+      "oneWayDelayMin": 10.3,
+      "sunEarthMarsAngleDeg": 92.51
+    },
+    {
+      "date": "2026-11-25",
+      "deltaAu": 1.2298,
+      "oneWayDelayMin": 10.23,
+      "sunEarthMarsAngleDeg": 93.11
+    },
+    {
+      "date": "2026-11-26",
+      "deltaAu": 1.2211,
+      "oneWayDelayMin": 10.16,
+      "sunEarthMarsAngleDeg": 93.72
+    },
+    {
+      "date": "2026-11-27",
+      "deltaAu": 1.2124,
+      "oneWayDelayMin": 10.08,
+      "sunEarthMarsAngleDeg": 94.34
+    },
+    {
+      "date": "2026-11-28",
+      "deltaAu": 1.2037,
+      "oneWayDelayMin": 10.01,
+      "sunEarthMarsAngleDeg": 94.96
+    },
+    {
+      "date": "2026-11-29",
+      "deltaAu": 1.195,
+      "oneWayDelayMin": 9.94,
+      "sunEarthMarsAngleDeg": 95.58
+    },
+    {
+      "date": "2026-11-30",
+      "deltaAu": 1.1862,
+      "oneWayDelayMin": 9.87,
+      "sunEarthMarsAngleDeg": 96.21
+    },
+    {
+      "date": "2026-12-01",
+      "deltaAu": 1.1775,
+      "oneWayDelayMin": 9.79,
+      "sunEarthMarsAngleDeg": 96.85
+    },
+    {
+      "date": "2026-12-02",
+      "deltaAu": 1.1688,
+      "oneWayDelayMin": 9.72,
+      "sunEarthMarsAngleDeg": 97.5
+    },
+    {
+      "date": "2026-12-03",
+      "deltaAu": 1.16,
+      "oneWayDelayMin": 9.65,
+      "sunEarthMarsAngleDeg": 98.15
+    },
+    {
+      "date": "2026-12-04",
+      "deltaAu": 1.1513,
+      "oneWayDelayMin": 9.57,
+      "sunEarthMarsAngleDeg": 98.8
+    },
+    {
+      "date": "2026-12-05",
+      "deltaAu": 1.1425,
+      "oneWayDelayMin": 9.5,
+      "sunEarthMarsAngleDeg": 99.47
+    },
+    {
+      "date": "2026-12-06",
+      "deltaAu": 1.1338,
+      "oneWayDelayMin": 9.43,
+      "sunEarthMarsAngleDeg": 100.14
+    },
+    {
+      "date": "2026-12-07",
+      "deltaAu": 1.125,
+      "oneWayDelayMin": 9.36,
+      "sunEarthMarsAngleDeg": 100.82
+    },
+    {
+      "date": "2026-12-08",
+      "deltaAu": 1.1163,
+      "oneWayDelayMin": 9.28,
+      "sunEarthMarsAngleDeg": 101.5
+    },
+    {
+      "date": "2026-12-09",
+      "deltaAu": 1.1076,
+      "oneWayDelayMin": 9.21,
+      "sunEarthMarsAngleDeg": 102.19
+    },
+    {
+      "date": "2026-12-10",
+      "deltaAu": 1.0989,
+      "oneWayDelayMin": 9.14,
+      "sunEarthMarsAngleDeg": 102.89
+    },
+    {
+      "date": "2026-12-11",
+      "deltaAu": 1.0901,
+      "oneWayDelayMin": 9.07,
+      "sunEarthMarsAngleDeg": 103.6
+    },
+    {
+      "date": "2026-12-12",
+      "deltaAu": 1.0815,
+      "oneWayDelayMin": 8.99,
+      "sunEarthMarsAngleDeg": 104.31
+    },
+    {
+      "date": "2026-12-13",
+      "deltaAu": 1.0728,
+      "oneWayDelayMin": 8.92,
+      "sunEarthMarsAngleDeg": 105.04
+    },
+    {
+      "date": "2026-12-14",
+      "deltaAu": 1.0641,
+      "oneWayDelayMin": 8.85,
+      "sunEarthMarsAngleDeg": 105.77
+    },
+    {
+      "date": "2026-12-15",
+      "deltaAu": 1.0555,
+      "oneWayDelayMin": 8.78,
+      "sunEarthMarsAngleDeg": 106.5
+    },
+    {
+      "date": "2026-12-16",
+      "deltaAu": 1.0469,
+      "oneWayDelayMin": 8.71,
+      "sunEarthMarsAngleDeg": 107.25
+    },
+    {
+      "date": "2026-12-17",
+      "deltaAu": 1.0383,
+      "oneWayDelayMin": 8.64,
+      "sunEarthMarsAngleDeg": 108
+    },
+    {
+      "date": "2026-12-18",
+      "deltaAu": 1.0297,
+      "oneWayDelayMin": 8.56,
+      "sunEarthMarsAngleDeg": 108.76
+    },
+    {
+      "date": "2026-12-19",
+      "deltaAu": 1.0212,
+      "oneWayDelayMin": 8.49,
+      "sunEarthMarsAngleDeg": 109.53
+    },
+    {
+      "date": "2026-12-20",
+      "deltaAu": 1.0127,
+      "oneWayDelayMin": 8.42,
+      "sunEarthMarsAngleDeg": 110.31
+    },
+    {
+      "date": "2026-12-21",
+      "deltaAu": 1.0042,
+      "oneWayDelayMin": 8.35,
+      "sunEarthMarsAngleDeg": 111.1
+    },
+    {
+      "date": "2026-12-22",
+      "deltaAu": 0.9958,
+      "oneWayDelayMin": 8.28,
+      "sunEarthMarsAngleDeg": 111.9
+    },
+    {
+      "date": "2026-12-23",
+      "deltaAu": 0.9874,
+      "oneWayDelayMin": 8.21,
+      "sunEarthMarsAngleDeg": 112.7
+    },
+    {
+      "date": "2026-12-24",
+      "deltaAu": 0.979,
+      "oneWayDelayMin": 8.14,
+      "sunEarthMarsAngleDeg": 113.52
+    },
+    {
+      "date": "2026-12-25",
+      "deltaAu": 0.9707,
+      "oneWayDelayMin": 8.07,
+      "sunEarthMarsAngleDeg": 114.34
+    },
+    {
+      "date": "2026-12-26",
+      "deltaAu": 0.9624,
+      "oneWayDelayMin": 8,
+      "sunEarthMarsAngleDeg": 115.18
+    },
+    {
+      "date": "2026-12-27",
+      "deltaAu": 0.9542,
+      "oneWayDelayMin": 7.94,
+      "sunEarthMarsAngleDeg": 116.02
+    },
+    {
+      "date": "2026-12-28",
+      "deltaAu": 0.946,
+      "oneWayDelayMin": 7.87,
+      "sunEarthMarsAngleDeg": 116.87
+    },
+    {
+      "date": "2026-12-29",
+      "deltaAu": 0.9379,
+      "oneWayDelayMin": 7.8,
+      "sunEarthMarsAngleDeg": 117.74
+    },
+    {
+      "date": "2026-12-30",
+      "deltaAu": 0.9298,
+      "oneWayDelayMin": 7.73,
+      "sunEarthMarsAngleDeg": 118.61
+    },
+    {
+      "date": "2026-12-31",
+      "deltaAu": 0.9218,
+      "oneWayDelayMin": 7.67,
+      "sunEarthMarsAngleDeg": 119.5
+    },
+    {
+      "date": "2027-01-01",
+      "deltaAu": 0.9138,
+      "oneWayDelayMin": 7.6,
+      "sunEarthMarsAngleDeg": 120.39
+    },
+    {
+      "date": "2027-01-02",
+      "deltaAu": 0.9059,
+      "oneWayDelayMin": 7.53,
+      "sunEarthMarsAngleDeg": 121.3
+    },
+    {
+      "date": "2027-01-03",
+      "deltaAu": 0.8981,
+      "oneWayDelayMin": 7.47,
+      "sunEarthMarsAngleDeg": 122.22
+    },
+    {
+      "date": "2027-01-04",
+      "deltaAu": 0.8904,
+      "oneWayDelayMin": 7.4,
+      "sunEarthMarsAngleDeg": 123.15
+    },
+    {
+      "date": "2027-01-05",
+      "deltaAu": 0.8827,
+      "oneWayDelayMin": 7.34,
+      "sunEarthMarsAngleDeg": 124.09
+    },
+    {
+      "date": "2027-01-06",
+      "deltaAu": 0.8751,
+      "oneWayDelayMin": 7.28,
+      "sunEarthMarsAngleDeg": 125.05
+    },
+    {
+      "date": "2027-01-07",
+      "deltaAu": 0.8676,
+      "oneWayDelayMin": 7.22,
+      "sunEarthMarsAngleDeg": 126.01
+    },
+    {
+      "date": "2027-01-08",
+      "deltaAu": 0.8601,
+      "oneWayDelayMin": 7.15,
+      "sunEarthMarsAngleDeg": 126.99
+    },
+    {
+      "date": "2027-01-09",
+      "deltaAu": 0.8528,
+      "oneWayDelayMin": 7.09,
+      "sunEarthMarsAngleDeg": 127.98
+    },
+    {
+      "date": "2027-01-10",
+      "deltaAu": 0.8455,
+      "oneWayDelayMin": 7.03,
+      "sunEarthMarsAngleDeg": 128.98
+    },
+    {
+      "date": "2027-01-11",
+      "deltaAu": 0.8384,
+      "oneWayDelayMin": 6.97,
+      "sunEarthMarsAngleDeg": 129.99
+    },
+    {
+      "date": "2027-01-12",
+      "deltaAu": 0.8313,
+      "oneWayDelayMin": 6.91,
+      "sunEarthMarsAngleDeg": 131.02
+    },
+    {
+      "date": "2027-01-13",
+      "deltaAu": 0.8244,
+      "oneWayDelayMin": 6.86,
+      "sunEarthMarsAngleDeg": 132.06
+    },
+    {
+      "date": "2027-01-14",
+      "deltaAu": 0.8176,
+      "oneWayDelayMin": 6.8,
+      "sunEarthMarsAngleDeg": 133.11
+    },
+    {
+      "date": "2027-01-15",
+      "deltaAu": 0.8109,
+      "oneWayDelayMin": 6.74,
+      "sunEarthMarsAngleDeg": 134.17
+    },
+    {
+      "date": "2027-01-16",
+      "deltaAu": 0.8043,
+      "oneWayDelayMin": 6.69,
+      "sunEarthMarsAngleDeg": 135.25
+    },
+    {
+      "date": "2027-01-17",
+      "deltaAu": 0.7978,
+      "oneWayDelayMin": 6.63,
+      "sunEarthMarsAngleDeg": 136.33
+    },
+    {
+      "date": "2027-01-18",
+      "deltaAu": 0.7914,
+      "oneWayDelayMin": 6.58,
+      "sunEarthMarsAngleDeg": 137.44
+    },
+    {
+      "date": "2027-01-19",
+      "deltaAu": 0.7852,
+      "oneWayDelayMin": 6.53,
+      "sunEarthMarsAngleDeg": 138.55
+    },
+    {
+      "date": "2027-01-20",
+      "deltaAu": 0.7791,
+      "oneWayDelayMin": 6.48,
+      "sunEarthMarsAngleDeg": 139.68
+    },
+    {
+      "date": "2027-01-21",
+      "deltaAu": 0.7732,
+      "oneWayDelayMin": 6.43,
+      "sunEarthMarsAngleDeg": 140.81
+    },
+    {
+      "date": "2027-01-22",
+      "deltaAu": 0.7673,
+      "oneWayDelayMin": 6.38,
+      "sunEarthMarsAngleDeg": 141.97
+    },
+    {
+      "date": "2027-01-23",
+      "deltaAu": 0.7617,
+      "oneWayDelayMin": 6.33,
+      "sunEarthMarsAngleDeg": 143.13
+    },
+    {
+      "date": "2027-01-24",
+      "deltaAu": 0.7562,
+      "oneWayDelayMin": 6.29,
+      "sunEarthMarsAngleDeg": 144.3
+    },
+    {
+      "date": "2027-01-25",
+      "deltaAu": 0.7508,
+      "oneWayDelayMin": 6.24,
+      "sunEarthMarsAngleDeg": 145.49
+    },
+    {
+      "date": "2027-01-26",
+      "deltaAu": 0.7456,
+      "oneWayDelayMin": 6.2,
+      "sunEarthMarsAngleDeg": 146.69
+    },
+    {
+      "date": "2027-01-27",
+      "deltaAu": 0.7405,
+      "oneWayDelayMin": 6.16,
+      "sunEarthMarsAngleDeg": 147.9
+    },
+    {
+      "date": "2027-01-28",
+      "deltaAu": 0.7357,
+      "oneWayDelayMin": 6.12,
+      "sunEarthMarsAngleDeg": 149.13
+    },
+    {
+      "date": "2027-01-29",
+      "deltaAu": 0.7309,
+      "oneWayDelayMin": 6.08,
+      "sunEarthMarsAngleDeg": 150.36
+    },
+    {
+      "date": "2027-01-30",
+      "deltaAu": 0.7264,
+      "oneWayDelayMin": 6.04,
+      "sunEarthMarsAngleDeg": 151.61
+    },
+    {
+      "date": "2027-01-31",
+      "deltaAu": 0.722,
+      "oneWayDelayMin": 6.01,
+      "sunEarthMarsAngleDeg": 152.86
+    },
+    {
+      "date": "2027-02-01",
+      "deltaAu": 0.7179,
+      "oneWayDelayMin": 5.97,
+      "sunEarthMarsAngleDeg": 154.13
+    },
+    {
+      "date": "2027-02-02",
+      "deltaAu": 0.7139,
+      "oneWayDelayMin": 5.94,
+      "sunEarthMarsAngleDeg": 155.4
+    },
+    {
+      "date": "2027-02-03",
+      "deltaAu": 0.7101,
+      "oneWayDelayMin": 5.91,
+      "sunEarthMarsAngleDeg": 156.69
+    },
+    {
+      "date": "2027-02-04",
+      "deltaAu": 0.7065,
+      "oneWayDelayMin": 5.88,
+      "sunEarthMarsAngleDeg": 157.98
+    },
+    {
+      "date": "2027-02-05",
+      "deltaAu": 0.7031,
+      "oneWayDelayMin": 5.85,
+      "sunEarthMarsAngleDeg": 159.28
+    },
+    {
+      "date": "2027-02-06",
+      "deltaAu": 0.6999,
+      "oneWayDelayMin": 5.82,
+      "sunEarthMarsAngleDeg": 160.58
+    },
+    {
+      "date": "2027-02-07",
+      "deltaAu": 0.6969,
+      "oneWayDelayMin": 5.8,
+      "sunEarthMarsAngleDeg": 161.88
+    },
+    {
+      "date": "2027-02-08",
+      "deltaAu": 0.6941,
+      "oneWayDelayMin": 5.77,
+      "sunEarthMarsAngleDeg": 163.19
+    },
+    {
+      "date": "2027-02-09",
+      "deltaAu": 0.6916,
+      "oneWayDelayMin": 5.75,
+      "sunEarthMarsAngleDeg": 164.5
+    },
+    {
+      "date": "2027-02-10",
+      "deltaAu": 0.6892,
+      "oneWayDelayMin": 5.73,
+      "sunEarthMarsAngleDeg": 165.81
+    },
+    {
+      "date": "2027-02-11",
+      "deltaAu": 0.6871,
+      "oneWayDelayMin": 5.71,
+      "sunEarthMarsAngleDeg": 167.11
+    },
+    {
+      "date": "2027-02-12",
+      "deltaAu": 0.6852,
+      "oneWayDelayMin": 5.7,
+      "sunEarthMarsAngleDeg": 168.39
+    },
+    {
+      "date": "2027-02-13",
+      "deltaAu": 0.6835,
+      "oneWayDelayMin": 5.68,
+      "sunEarthMarsAngleDeg": 169.66
+    },
+    {
+      "date": "2027-02-14",
+      "deltaAu": 0.682,
+      "oneWayDelayMin": 5.67,
+      "sunEarthMarsAngleDeg": 170.89
+    },
+    {
+      "date": "2027-02-15",
+      "deltaAu": 0.6808,
+      "oneWayDelayMin": 5.66,
+      "sunEarthMarsAngleDeg": 172.08
+    },
+    {
+      "date": "2027-02-16",
+      "deltaAu": 0.6797,
+      "oneWayDelayMin": 5.65,
+      "sunEarthMarsAngleDeg": 173.19
+    },
+    {
+      "date": "2027-02-17",
+      "deltaAu": 0.6789,
+      "oneWayDelayMin": 5.65,
+      "sunEarthMarsAngleDeg": 174.17
+    },
+    {
+      "date": "2027-02-18",
+      "deltaAu": 0.6784,
+      "oneWayDelayMin": 5.64,
+      "sunEarthMarsAngleDeg": 174.96
+    },
+    {
+      "date": "2027-02-19",
+      "deltaAu": 0.678,
+      "oneWayDelayMin": 5.64,
+      "sunEarthMarsAngleDeg": 175.44
+    },
+    {
+      "date": "2027-02-20",
+      "deltaAu": 0.6779,
+      "oneWayDelayMin": 5.64,
+      "sunEarthMarsAngleDeg": 175.51
+    },
+    {
+      "date": "2027-02-21",
+      "deltaAu": 0.678,
+      "oneWayDelayMin": 5.64,
+      "sunEarthMarsAngleDeg": 175.17
+    },
+    {
+      "date": "2027-02-22",
+      "deltaAu": 0.6784,
+      "oneWayDelayMin": 5.64,
+      "sunEarthMarsAngleDeg": 174.47
+    },
+    {
+      "date": "2027-02-23",
+      "deltaAu": 0.6789,
+      "oneWayDelayMin": 5.65,
+      "sunEarthMarsAngleDeg": 173.55
+    },
+    {
+      "date": "2027-02-24",
+      "deltaAu": 0.6797,
+      "oneWayDelayMin": 5.65,
+      "sunEarthMarsAngleDeg": 172.48
+    },
+    {
+      "date": "2027-02-25",
+      "deltaAu": 0.6807,
+      "oneWayDelayMin": 5.66,
+      "sunEarthMarsAngleDeg": 171.32
+    },
+    {
+      "date": "2027-02-26",
+      "deltaAu": 0.682,
+      "oneWayDelayMin": 5.67,
+      "sunEarthMarsAngleDeg": 170.1
+    },
+    {
+      "date": "2027-02-27",
+      "deltaAu": 0.6834,
+      "oneWayDelayMin": 5.68,
+      "sunEarthMarsAngleDeg": 168.85
+    },
+    {
+      "date": "2027-02-28",
+      "deltaAu": 0.6851,
+      "oneWayDelayMin": 5.7,
+      "sunEarthMarsAngleDeg": 167.58
+    },
+    {
+      "date": "2027-03-01",
+      "deltaAu": 0.687,
+      "oneWayDelayMin": 5.71,
+      "sunEarthMarsAngleDeg": 166.29
+    },
+    {
+      "date": "2027-03-02",
+      "deltaAu": 0.6891,
+      "oneWayDelayMin": 5.73,
+      "sunEarthMarsAngleDeg": 164.99
+    },
+    {
+      "date": "2027-03-03",
+      "deltaAu": 0.6914,
+      "oneWayDelayMin": 5.75,
+      "sunEarthMarsAngleDeg": 163.69
+    },
+    {
+      "date": "2027-03-04",
+      "deltaAu": 0.6939,
+      "oneWayDelayMin": 5.77,
+      "sunEarthMarsAngleDeg": 162.39
+    },
+    {
+      "date": "2027-03-05",
+      "deltaAu": 0.6967,
+      "oneWayDelayMin": 5.79,
+      "sunEarthMarsAngleDeg": 161.09
+    },
+    {
+      "date": "2027-03-06",
+      "deltaAu": 0.6996,
+      "oneWayDelayMin": 5.82,
+      "sunEarthMarsAngleDeg": 159.8
+    },
+    {
+      "date": "2027-03-07",
+      "deltaAu": 0.7028,
+      "oneWayDelayMin": 5.84,
+      "sunEarthMarsAngleDeg": 158.51
+    },
+    {
+      "date": "2027-03-08",
+      "deltaAu": 0.7061,
+      "oneWayDelayMin": 5.87,
+      "sunEarthMarsAngleDeg": 157.22
+    },
+    {
+      "date": "2027-03-09",
+      "deltaAu": 0.7097,
+      "oneWayDelayMin": 5.9,
+      "sunEarthMarsAngleDeg": 155.95
+    },
+    {
+      "date": "2027-03-10",
+      "deltaAu": 0.7134,
+      "oneWayDelayMin": 5.93,
+      "sunEarthMarsAngleDeg": 154.68
+    },
+    {
+      "date": "2027-03-11",
+      "deltaAu": 0.7173,
+      "oneWayDelayMin": 5.97,
+      "sunEarthMarsAngleDeg": 153.42
+    },
+    {
+      "date": "2027-03-12",
+      "deltaAu": 0.7214,
+      "oneWayDelayMin": 6,
+      "sunEarthMarsAngleDeg": 152.18
+    },
+    {
+      "date": "2027-03-13",
+      "deltaAu": 0.7257,
+      "oneWayDelayMin": 6.04,
+      "sunEarthMarsAngleDeg": 150.94
+    },
+    {
+      "date": "2027-03-14",
+      "deltaAu": 0.7302,
+      "oneWayDelayMin": 6.07,
+      "sunEarthMarsAngleDeg": 149.71
+    },
+    {
+      "date": "2027-03-15",
+      "deltaAu": 0.7348,
+      "oneWayDelayMin": 6.11,
+      "sunEarthMarsAngleDeg": 148.5
+    },
+    {
+      "date": "2027-03-16",
+      "deltaAu": 0.7396,
+      "oneWayDelayMin": 6.15,
+      "sunEarthMarsAngleDeg": 147.3
+    },
+    {
+      "date": "2027-03-17",
+      "deltaAu": 0.7446,
+      "oneWayDelayMin": 6.19,
+      "sunEarthMarsAngleDeg": 146.11
+    },
+    {
+      "date": "2027-03-18",
+      "deltaAu": 0.7497,
+      "oneWayDelayMin": 6.23,
+      "sunEarthMarsAngleDeg": 144.93
+    },
+    {
+      "date": "2027-03-19",
+      "deltaAu": 0.7549,
+      "oneWayDelayMin": 6.28,
+      "sunEarthMarsAngleDeg": 143.77
+    },
+    {
+      "date": "2027-03-20",
+      "deltaAu": 0.7603,
+      "oneWayDelayMin": 6.32,
+      "sunEarthMarsAngleDeg": 142.62
+    },
+    {
+      "date": "2027-03-21",
+      "deltaAu": 0.7659,
+      "oneWayDelayMin": 6.37,
+      "sunEarthMarsAngleDeg": 141.48
+    },
+    {
+      "date": "2027-03-22",
+      "deltaAu": 0.7716,
+      "oneWayDelayMin": 6.42,
+      "sunEarthMarsAngleDeg": 140.35
+    },
+    {
+      "date": "2027-03-23",
+      "deltaAu": 0.7774,
+      "oneWayDelayMin": 6.47,
+      "sunEarthMarsAngleDeg": 139.24
+    },
+    {
+      "date": "2027-03-24",
+      "deltaAu": 0.7833,
+      "oneWayDelayMin": 6.51,
+      "sunEarthMarsAngleDeg": 138.14
+    },
+    {
+      "date": "2027-03-25",
+      "deltaAu": 0.7894,
+      "oneWayDelayMin": 6.57,
+      "sunEarthMarsAngleDeg": 137.05
+    },
+    {
+      "date": "2027-03-26",
+      "deltaAu": 0.7956,
+      "oneWayDelayMin": 6.62,
+      "sunEarthMarsAngleDeg": 135.98
+    },
+    {
+      "date": "2027-03-27",
+      "deltaAu": 0.8019,
+      "oneWayDelayMin": 6.67,
+      "sunEarthMarsAngleDeg": 134.92
+    },
+    {
+      "date": "2027-03-28",
+      "deltaAu": 0.8084,
+      "oneWayDelayMin": 6.72,
+      "sunEarthMarsAngleDeg": 133.87
+    },
+    {
+      "date": "2027-03-29",
+      "deltaAu": 0.8149,
+      "oneWayDelayMin": 6.78,
+      "sunEarthMarsAngleDeg": 132.84
+    },
+    {
+      "date": "2027-03-30",
+      "deltaAu": 0.8216,
+      "oneWayDelayMin": 6.83,
+      "sunEarthMarsAngleDeg": 131.82
+    },
+    {
+      "date": "2027-03-31",
+      "deltaAu": 0.8283,
+      "oneWayDelayMin": 6.89,
+      "sunEarthMarsAngleDeg": 130.81
+    },
+    {
+      "date": "2027-04-01",
+      "deltaAu": 0.8352,
+      "oneWayDelayMin": 6.95,
+      "sunEarthMarsAngleDeg": 129.81
+    },
+    {
+      "date": "2027-04-02",
+      "deltaAu": 0.8421,
+      "oneWayDelayMin": 7,
+      "sunEarthMarsAngleDeg": 128.83
+    },
+    {
+      "date": "2027-04-03",
+      "deltaAu": 0.8492,
+      "oneWayDelayMin": 7.06,
+      "sunEarthMarsAngleDeg": 127.86
+    },
+    {
+      "date": "2027-04-04",
+      "deltaAu": 0.8563,
+      "oneWayDelayMin": 7.12,
+      "sunEarthMarsAngleDeg": 126.9
+    },
+    {
+      "date": "2027-04-05",
+      "deltaAu": 0.8635,
+      "oneWayDelayMin": 7.18,
+      "sunEarthMarsAngleDeg": 125.95
+    },
+    {
+      "date": "2027-04-06",
+      "deltaAu": 0.8708,
+      "oneWayDelayMin": 7.24,
+      "sunEarthMarsAngleDeg": 125.01
+    },
+    {
+      "date": "2027-04-07",
+      "deltaAu": 0.8782,
+      "oneWayDelayMin": 7.3,
+      "sunEarthMarsAngleDeg": 124.09
+    },
+    {
+      "date": "2027-04-08",
+      "deltaAu": 0.8857,
+      "oneWayDelayMin": 7.37,
+      "sunEarthMarsAngleDeg": 123.18
+    },
+    {
+      "date": "2027-04-09",
+      "deltaAu": 0.8932,
+      "oneWayDelayMin": 7.43,
+      "sunEarthMarsAngleDeg": 122.28
+    },
+    {
+      "date": "2027-04-10",
+      "deltaAu": 0.9008,
+      "oneWayDelayMin": 7.49,
+      "sunEarthMarsAngleDeg": 121.39
+    },
+    {
+      "date": "2027-04-11",
+      "deltaAu": 0.9085,
+      "oneWayDelayMin": 7.56,
+      "sunEarthMarsAngleDeg": 120.52
+    },
+    {
+      "date": "2027-04-12",
+      "deltaAu": 0.9162,
+      "oneWayDelayMin": 7.62,
+      "sunEarthMarsAngleDeg": 119.65
+    },
+    {
+      "date": "2027-04-13",
+      "deltaAu": 0.924,
+      "oneWayDelayMin": 7.68,
+      "sunEarthMarsAngleDeg": 118.8
+    },
+    {
+      "date": "2027-04-14",
+      "deltaAu": 0.9318,
+      "oneWayDelayMin": 7.75,
+      "sunEarthMarsAngleDeg": 117.96
+    },
+    {
+      "date": "2027-04-15",
+      "deltaAu": 0.9397,
+      "oneWayDelayMin": 7.82,
+      "sunEarthMarsAngleDeg": 117.12
+    },
+    {
+      "date": "2027-04-16",
+      "deltaAu": 0.9476,
+      "oneWayDelayMin": 7.88,
+      "sunEarthMarsAngleDeg": 116.3
+    },
+    {
+      "date": "2027-04-17",
+      "deltaAu": 0.9556,
+      "oneWayDelayMin": 7.95,
+      "sunEarthMarsAngleDeg": 115.49
+    },
+    {
+      "date": "2027-04-18",
+      "deltaAu": 0.9636,
+      "oneWayDelayMin": 8.01,
+      "sunEarthMarsAngleDeg": 114.69
+    },
+    {
+      "date": "2027-04-19",
+      "deltaAu": 0.9717,
+      "oneWayDelayMin": 8.08,
+      "sunEarthMarsAngleDeg": 113.9
+    },
+    {
+      "date": "2027-04-20",
+      "deltaAu": 0.9798,
+      "oneWayDelayMin": 8.15,
+      "sunEarthMarsAngleDeg": 113.11
+    },
+    {
+      "date": "2027-04-21",
+      "deltaAu": 0.9879,
+      "oneWayDelayMin": 8.22,
+      "sunEarthMarsAngleDeg": 112.34
+    },
+    {
+      "date": "2027-04-22",
+      "deltaAu": 0.9961,
+      "oneWayDelayMin": 8.28,
+      "sunEarthMarsAngleDeg": 111.58
+    },
+    {
+      "date": "2027-04-23",
+      "deltaAu": 1.0043,
+      "oneWayDelayMin": 8.35,
+      "sunEarthMarsAngleDeg": 110.82
+    },
+    {
+      "date": "2027-04-24",
+      "deltaAu": 1.0125,
+      "oneWayDelayMin": 8.42,
+      "sunEarthMarsAngleDeg": 110.07
+    },
+    {
+      "date": "2027-04-25",
+      "deltaAu": 1.0208,
+      "oneWayDelayMin": 8.49,
+      "sunEarthMarsAngleDeg": 109.34
+    },
+    {
+      "date": "2027-04-26",
+      "deltaAu": 1.0291,
+      "oneWayDelayMin": 8.56,
+      "sunEarthMarsAngleDeg": 108.61
+    },
+    {
+      "date": "2027-04-27",
+      "deltaAu": 1.0374,
+      "oneWayDelayMin": 8.63,
+      "sunEarthMarsAngleDeg": 107.89
+    },
+    {
+      "date": "2027-04-28",
+      "deltaAu": 1.0458,
+      "oneWayDelayMin": 8.7,
+      "sunEarthMarsAngleDeg": 107.17
+    },
+    {
+      "date": "2027-04-29",
+      "deltaAu": 1.0541,
+      "oneWayDelayMin": 8.77,
+      "sunEarthMarsAngleDeg": 106.47
+    },
+    {
+      "date": "2027-04-30",
+      "deltaAu": 1.0625,
+      "oneWayDelayMin": 8.84,
+      "sunEarthMarsAngleDeg": 105.77
+    },
+    {
+      "date": "2027-05-01",
+      "deltaAu": 1.0709,
+      "oneWayDelayMin": 8.91,
+      "sunEarthMarsAngleDeg": 105.08
+    },
+    {
+      "date": "2027-05-02",
+      "deltaAu": 1.0793,
+      "oneWayDelayMin": 8.98,
+      "sunEarthMarsAngleDeg": 104.4
+    },
+    {
+      "date": "2027-05-03",
+      "deltaAu": 1.0878,
+      "oneWayDelayMin": 9.05,
+      "sunEarthMarsAngleDeg": 103.73
+    },
+    {
+      "date": "2027-05-04",
+      "deltaAu": 1.0962,
+      "oneWayDelayMin": 9.12,
+      "sunEarthMarsAngleDeg": 103.06
+    },
+    {
+      "date": "2027-05-05",
+      "deltaAu": 1.1047,
+      "oneWayDelayMin": 9.19,
+      "sunEarthMarsAngleDeg": 102.4
+    },
+    {
+      "date": "2027-05-06",
+      "deltaAu": 1.1131,
+      "oneWayDelayMin": 9.26,
+      "sunEarthMarsAngleDeg": 101.75
+    },
+    {
+      "date": "2027-05-07",
+      "deltaAu": 1.1216,
+      "oneWayDelayMin": 9.33,
+      "sunEarthMarsAngleDeg": 101.1
+    },
+    {
+      "date": "2027-05-08",
+      "deltaAu": 1.1301,
+      "oneWayDelayMin": 9.4,
+      "sunEarthMarsAngleDeg": 100.46
+    },
+    {
+      "date": "2027-05-09",
+      "deltaAu": 1.1386,
+      "oneWayDelayMin": 9.47,
+      "sunEarthMarsAngleDeg": 99.83
+    },
+    {
+      "date": "2027-05-10",
+      "deltaAu": 1.147,
+      "oneWayDelayMin": 9.54,
+      "sunEarthMarsAngleDeg": 99.21
+    },
+    {
+      "date": "2027-05-11",
+      "deltaAu": 1.1555,
+      "oneWayDelayMin": 9.61,
+      "sunEarthMarsAngleDeg": 98.59
+    },
+    {
+      "date": "2027-05-12",
+      "deltaAu": 1.164,
+      "oneWayDelayMin": 9.68,
+      "sunEarthMarsAngleDeg": 97.97
+    },
+    {
+      "date": "2027-05-13",
+      "deltaAu": 1.1725,
+      "oneWayDelayMin": 9.75,
+      "sunEarthMarsAngleDeg": 97.37
+    },
+    {
+      "date": "2027-05-14",
+      "deltaAu": 1.181,
+      "oneWayDelayMin": 9.82,
+      "sunEarthMarsAngleDeg": 96.77
+    },
+    {
+      "date": "2027-05-15",
+      "deltaAu": 1.1894,
+      "oneWayDelayMin": 9.89,
+      "sunEarthMarsAngleDeg": 96.17
+    },
+    {
+      "date": "2027-05-16",
+      "deltaAu": 1.1979,
+      "oneWayDelayMin": 9.96,
+      "sunEarthMarsAngleDeg": 95.58
+    },
+    {
+      "date": "2027-05-17",
+      "deltaAu": 1.2063,
+      "oneWayDelayMin": 10.03,
+      "sunEarthMarsAngleDeg": 95
+    },
+    {
+      "date": "2027-05-18",
+      "deltaAu": 1.2148,
+      "oneWayDelayMin": 10.1,
+      "sunEarthMarsAngleDeg": 94.42
+    },
+    {
+      "date": "2027-05-19",
+      "deltaAu": 1.2232,
+      "oneWayDelayMin": 10.17,
+      "sunEarthMarsAngleDeg": 93.85
+    },
+    {
+      "date": "2027-05-20",
+      "deltaAu": 1.2317,
+      "oneWayDelayMin": 10.24,
+      "sunEarthMarsAngleDeg": 93.28
+    },
+    {
+      "date": "2027-05-21",
+      "deltaAu": 1.2401,
+      "oneWayDelayMin": 10.31,
+      "sunEarthMarsAngleDeg": 92.72
+    },
+    {
+      "date": "2027-05-22",
+      "deltaAu": 1.2485,
+      "oneWayDelayMin": 10.38,
+      "sunEarthMarsAngleDeg": 92.16
+    },
+    {
+      "date": "2027-05-23",
+      "deltaAu": 1.2569,
+      "oneWayDelayMin": 10.45,
+      "sunEarthMarsAngleDeg": 91.61
+    },
+    {
+      "date": "2027-05-24",
+      "deltaAu": 1.2652,
+      "oneWayDelayMin": 10.52,
+      "sunEarthMarsAngleDeg": 91.06
+    },
+    {
+      "date": "2027-05-25",
+      "deltaAu": 1.2736,
+      "oneWayDelayMin": 10.59,
+      "sunEarthMarsAngleDeg": 90.52
+    },
+    {
+      "date": "2027-05-26",
+      "deltaAu": 1.282,
+      "oneWayDelayMin": 10.66,
+      "sunEarthMarsAngleDeg": 89.98
+    },
+    {
+      "date": "2027-05-27",
+      "deltaAu": 1.2903,
+      "oneWayDelayMin": 10.73,
+      "sunEarthMarsAngleDeg": 89.45
+    },
+    {
+      "date": "2027-05-28",
+      "deltaAu": 1.2986,
+      "oneWayDelayMin": 10.8,
+      "sunEarthMarsAngleDeg": 88.92
+    },
+    {
+      "date": "2027-05-29",
+      "deltaAu": 1.3069,
+      "oneWayDelayMin": 10.87,
+      "sunEarthMarsAngleDeg": 88.4
+    },
+    {
+      "date": "2027-05-30",
+      "deltaAu": 1.3152,
+      "oneWayDelayMin": 10.94,
+      "sunEarthMarsAngleDeg": 87.87
+    },
+    {
+      "date": "2027-05-31",
+      "deltaAu": 1.3235,
+      "oneWayDelayMin": 11.01,
+      "sunEarthMarsAngleDeg": 87.36
+    },
+    {
+      "date": "2027-06-01",
+      "deltaAu": 1.3317,
+      "oneWayDelayMin": 11.08,
+      "sunEarthMarsAngleDeg": 86.85
+    },
+    {
+      "date": "2027-06-02",
+      "deltaAu": 1.3399,
+      "oneWayDelayMin": 11.14,
+      "sunEarthMarsAngleDeg": 86.34
+    },
+    {
+      "date": "2027-06-03",
+      "deltaAu": 1.3481,
+      "oneWayDelayMin": 11.21,
+      "sunEarthMarsAngleDeg": 85.83
+    },
+    {
+      "date": "2027-06-04",
+      "deltaAu": 1.3563,
+      "oneWayDelayMin": 11.28,
+      "sunEarthMarsAngleDeg": 85.33
+    },
+    {
+      "date": "2027-06-05",
+      "deltaAu": 1.3645,
+      "oneWayDelayMin": 11.35,
+      "sunEarthMarsAngleDeg": 84.84
+    },
+    {
+      "date": "2027-06-06",
+      "deltaAu": 1.3726,
+      "oneWayDelayMin": 11.42,
+      "sunEarthMarsAngleDeg": 84.35
+    },
+    {
+      "date": "2027-06-07",
+      "deltaAu": 1.3807,
+      "oneWayDelayMin": 11.48,
+      "sunEarthMarsAngleDeg": 83.86
+    },
+    {
+      "date": "2027-06-08",
+      "deltaAu": 1.3888,
+      "oneWayDelayMin": 11.55,
+      "sunEarthMarsAngleDeg": 83.37
+    },
+    {
+      "date": "2027-06-09",
+      "deltaAu": 1.3969,
+      "oneWayDelayMin": 11.62,
+      "sunEarthMarsAngleDeg": 82.89
+    },
+    {
+      "date": "2027-06-10",
+      "deltaAu": 1.4049,
+      "oneWayDelayMin": 11.68,
+      "sunEarthMarsAngleDeg": 82.42
+    },
+    {
+      "date": "2027-06-11",
+      "deltaAu": 1.4129,
+      "oneWayDelayMin": 11.75,
+      "sunEarthMarsAngleDeg": 81.94
+    },
+    {
+      "date": "2027-06-12",
+      "deltaAu": 1.4208,
+      "oneWayDelayMin": 11.82,
+      "sunEarthMarsAngleDeg": 81.47
+    },
+    {
+      "date": "2027-06-13",
+      "deltaAu": 1.4288,
+      "oneWayDelayMin": 11.88,
+      "sunEarthMarsAngleDeg": 81.01
+    },
+    {
+      "date": "2027-06-14",
+      "deltaAu": 1.4367,
+      "oneWayDelayMin": 11.95,
+      "sunEarthMarsAngleDeg": 80.54
+    },
+    {
+      "date": "2027-06-15",
+      "deltaAu": 1.4446,
+      "oneWayDelayMin": 12.01,
+      "sunEarthMarsAngleDeg": 80.08
+    },
+    {
+      "date": "2027-06-16",
+      "deltaAu": 1.4524,
+      "oneWayDelayMin": 12.08,
+      "sunEarthMarsAngleDeg": 79.63
+    },
+    {
+      "date": "2027-06-17",
+      "deltaAu": 1.4602,
+      "oneWayDelayMin": 12.14,
+      "sunEarthMarsAngleDeg": 79.17
+    },
+    {
+      "date": "2027-06-18",
+      "deltaAu": 1.468,
+      "oneWayDelayMin": 12.21,
+      "sunEarthMarsAngleDeg": 78.72
+    },
+    {
+      "date": "2027-06-19",
+      "deltaAu": 1.4758,
+      "oneWayDelayMin": 12.27,
+      "sunEarthMarsAngleDeg": 78.27
+    },
+    {
+      "date": "2027-06-20",
+      "deltaAu": 1.4835,
+      "oneWayDelayMin": 12.34,
+      "sunEarthMarsAngleDeg": 77.83
+    },
+    {
+      "date": "2027-06-21",
+      "deltaAu": 1.4912,
+      "oneWayDelayMin": 12.4,
+      "sunEarthMarsAngleDeg": 77.39
+    },
+    {
+      "date": "2027-06-22",
+      "deltaAu": 1.4989,
+      "oneWayDelayMin": 12.47,
+      "sunEarthMarsAngleDeg": 76.95
+    },
+    {
+      "date": "2027-06-23",
+      "deltaAu": 1.5065,
+      "oneWayDelayMin": 12.53,
+      "sunEarthMarsAngleDeg": 76.51
+    },
+    {
+      "date": "2027-06-24",
+      "deltaAu": 1.5141,
+      "oneWayDelayMin": 12.59,
+      "sunEarthMarsAngleDeg": 76.08
+    },
+    {
+      "date": "2027-06-25",
+      "deltaAu": 1.5217,
+      "oneWayDelayMin": 12.66,
+      "sunEarthMarsAngleDeg": 75.65
+    },
+    {
+      "date": "2027-06-26",
+      "deltaAu": 1.5292,
+      "oneWayDelayMin": 12.72,
+      "sunEarthMarsAngleDeg": 75.22
+    },
+    {
+      "date": "2027-06-27",
+      "deltaAu": 1.5367,
+      "oneWayDelayMin": 12.78,
+      "sunEarthMarsAngleDeg": 74.79
+    },
+    {
+      "date": "2027-06-28",
+      "deltaAu": 1.5442,
+      "oneWayDelayMin": 12.84,
+      "sunEarthMarsAngleDeg": 74.37
+    },
+    {
+      "date": "2027-06-29",
+      "deltaAu": 1.5516,
+      "oneWayDelayMin": 12.9,
+      "sunEarthMarsAngleDeg": 73.95
+    },
+    {
+      "date": "2027-06-30",
+      "deltaAu": 1.559,
+      "oneWayDelayMin": 12.97,
+      "sunEarthMarsAngleDeg": 73.53
+    },
+    {
+      "date": "2027-07-01",
+      "deltaAu": 1.5664,
+      "oneWayDelayMin": 13.03,
+      "sunEarthMarsAngleDeg": 73.12
+    },
+    {
+      "date": "2027-07-02",
+      "deltaAu": 1.5737,
+      "oneWayDelayMin": 13.09,
+      "sunEarthMarsAngleDeg": 72.7
+    },
+    {
+      "date": "2027-07-03",
+      "deltaAu": 1.581,
+      "oneWayDelayMin": 13.15,
+      "sunEarthMarsAngleDeg": 72.29
+    },
+    {
+      "date": "2027-07-04",
+      "deltaAu": 1.5882,
+      "oneWayDelayMin": 13.21,
+      "sunEarthMarsAngleDeg": 71.88
+    },
+    {
+      "date": "2027-07-05",
+      "deltaAu": 1.5955,
+      "oneWayDelayMin": 13.27,
+      "sunEarthMarsAngleDeg": 71.48
+    },
+    {
+      "date": "2027-07-06",
+      "deltaAu": 1.6026,
+      "oneWayDelayMin": 13.33,
+      "sunEarthMarsAngleDeg": 71.07
+    },
+    {
+      "date": "2027-07-07",
+      "deltaAu": 1.6098,
+      "oneWayDelayMin": 13.39,
+      "sunEarthMarsAngleDeg": 70.67
+    },
+    {
+      "date": "2027-07-08",
+      "deltaAu": 1.6169,
+      "oneWayDelayMin": 13.45,
+      "sunEarthMarsAngleDeg": 70.27
+    },
+    {
+      "date": "2027-07-09",
+      "deltaAu": 1.624,
+      "oneWayDelayMin": 13.51,
+      "sunEarthMarsAngleDeg": 69.88
+    },
+    {
+      "date": "2027-07-10",
+      "deltaAu": 1.631,
+      "oneWayDelayMin": 13.56,
+      "sunEarthMarsAngleDeg": 69.48
+    },
+    {
+      "date": "2027-07-11",
+      "deltaAu": 1.638,
+      "oneWayDelayMin": 13.62,
+      "sunEarthMarsAngleDeg": 69.09
+    },
+    {
+      "date": "2027-07-12",
+      "deltaAu": 1.6449,
+      "oneWayDelayMin": 13.68,
+      "sunEarthMarsAngleDeg": 68.7
+    },
+    {
+      "date": "2027-07-13",
+      "deltaAu": 1.6518,
+      "oneWayDelayMin": 13.74,
+      "sunEarthMarsAngleDeg": 68.31
+    },
+    {
+      "date": "2027-07-14",
+      "deltaAu": 1.6587,
+      "oneWayDelayMin": 13.79,
+      "sunEarthMarsAngleDeg": 67.92
+    },
+    {
+      "date": "2027-07-15",
+      "deltaAu": 1.6655,
+      "oneWayDelayMin": 13.85,
+      "sunEarthMarsAngleDeg": 67.54
+    },
+    {
+      "date": "2027-07-16",
+      "deltaAu": 1.6723,
+      "oneWayDelayMin": 13.91,
+      "sunEarthMarsAngleDeg": 67.16
+    },
+    {
+      "date": "2027-07-17",
+      "deltaAu": 1.679,
+      "oneWayDelayMin": 13.96,
+      "sunEarthMarsAngleDeg": 66.78
+    },
+    {
+      "date": "2027-07-18",
+      "deltaAu": 1.6858,
+      "oneWayDelayMin": 14.02,
+      "sunEarthMarsAngleDeg": 66.4
+    },
+    {
+      "date": "2027-07-19",
+      "deltaAu": 1.6924,
+      "oneWayDelayMin": 14.08,
+      "sunEarthMarsAngleDeg": 66.02
+    },
+    {
+      "date": "2027-07-20",
+      "deltaAu": 1.6991,
+      "oneWayDelayMin": 14.13,
+      "sunEarthMarsAngleDeg": 65.65
+    },
+    {
+      "date": "2027-07-21",
+      "deltaAu": 1.7056,
+      "oneWayDelayMin": 14.19,
+      "sunEarthMarsAngleDeg": 65.27
+    },
+    {
+      "date": "2027-07-22",
+      "deltaAu": 1.7122,
+      "oneWayDelayMin": 14.24,
+      "sunEarthMarsAngleDeg": 64.9
+    },
+    {
+      "date": "2027-07-23",
+      "deltaAu": 1.7187,
+      "oneWayDelayMin": 14.29,
+      "sunEarthMarsAngleDeg": 64.53
+    },
+    {
+      "date": "2027-07-24",
+      "deltaAu": 1.7252,
+      "oneWayDelayMin": 14.35,
+      "sunEarthMarsAngleDeg": 64.17
+    },
+    {
+      "date": "2027-07-25",
+      "deltaAu": 1.7316,
+      "oneWayDelayMin": 14.4,
+      "sunEarthMarsAngleDeg": 63.8
+    },
+    {
+      "date": "2027-07-26",
+      "deltaAu": 1.738,
+      "oneWayDelayMin": 14.45,
+      "sunEarthMarsAngleDeg": 63.43
+    },
+    {
+      "date": "2027-07-27",
+      "deltaAu": 1.7444,
+      "oneWayDelayMin": 14.51,
+      "sunEarthMarsAngleDeg": 63.07
+    },
+    {
+      "date": "2027-07-28",
+      "deltaAu": 1.7507,
+      "oneWayDelayMin": 14.56,
+      "sunEarthMarsAngleDeg": 62.71
+    },
+    {
+      "date": "2027-07-29",
+      "deltaAu": 1.757,
+      "oneWayDelayMin": 14.61,
+      "sunEarthMarsAngleDeg": 62.35
+    },
+    {
+      "date": "2027-07-30",
+      "deltaAu": 1.7632,
+      "oneWayDelayMin": 14.66,
+      "sunEarthMarsAngleDeg": 61.99
+    },
+    {
+      "date": "2027-07-31",
+      "deltaAu": 1.7694,
+      "oneWayDelayMin": 14.72,
+      "sunEarthMarsAngleDeg": 61.63
+    },
+    {
+      "date": "2027-08-01",
+      "deltaAu": 1.7756,
+      "oneWayDelayMin": 14.77,
+      "sunEarthMarsAngleDeg": 61.28
+    },
+    {
+      "date": "2027-08-02",
+      "deltaAu": 1.7817,
+      "oneWayDelayMin": 14.82,
+      "sunEarthMarsAngleDeg": 60.93
+    },
+    {
+      "date": "2027-08-03",
+      "deltaAu": 1.7877,
+      "oneWayDelayMin": 14.87,
+      "sunEarthMarsAngleDeg": 60.57
+    },
+    {
+      "date": "2027-08-04",
+      "deltaAu": 1.7938,
+      "oneWayDelayMin": 14.92,
+      "sunEarthMarsAngleDeg": 60.22
+    },
+    {
+      "date": "2027-08-05",
+      "deltaAu": 1.7998,
+      "oneWayDelayMin": 14.97,
+      "sunEarthMarsAngleDeg": 59.87
+    },
+    {
+      "date": "2027-08-06",
+      "deltaAu": 1.8057,
+      "oneWayDelayMin": 15.02,
+      "sunEarthMarsAngleDeg": 59.53
+    },
+    {
+      "date": "2027-08-07",
+      "deltaAu": 1.8116,
+      "oneWayDelayMin": 15.07,
+      "sunEarthMarsAngleDeg": 59.18
+    },
+    {
+      "date": "2027-08-08",
+      "deltaAu": 1.8175,
+      "oneWayDelayMin": 15.12,
+      "sunEarthMarsAngleDeg": 58.83
+    },
+    {
+      "date": "2027-08-09",
+      "deltaAu": 1.8233,
+      "oneWayDelayMin": 15.16,
+      "sunEarthMarsAngleDeg": 58.49
+    },
+    {
+      "date": "2027-08-10",
+      "deltaAu": 1.8291,
+      "oneWayDelayMin": 15.21,
+      "sunEarthMarsAngleDeg": 58.15
+    },
+    {
+      "date": "2027-08-11",
+      "deltaAu": 1.8348,
+      "oneWayDelayMin": 15.26,
+      "sunEarthMarsAngleDeg": 57.81
+    },
+    {
+      "date": "2027-08-12",
+      "deltaAu": 1.8405,
+      "oneWayDelayMin": 15.31,
+      "sunEarthMarsAngleDeg": 57.47
+    },
+    {
+      "date": "2027-08-13",
+      "deltaAu": 1.8461,
+      "oneWayDelayMin": 15.35,
+      "sunEarthMarsAngleDeg": 57.13
+    },
+    {
+      "date": "2027-08-14",
+      "deltaAu": 1.8517,
+      "oneWayDelayMin": 15.4,
+      "sunEarthMarsAngleDeg": 56.8
+    },
+    {
+      "date": "2027-08-15",
+      "deltaAu": 1.8573,
+      "oneWayDelayMin": 15.45,
+      "sunEarthMarsAngleDeg": 56.46
+    },
+    {
+      "date": "2027-08-16",
+      "deltaAu": 1.8628,
+      "oneWayDelayMin": 15.49,
+      "sunEarthMarsAngleDeg": 56.13
+    },
+    {
+      "date": "2027-08-17",
+      "deltaAu": 1.8683,
+      "oneWayDelayMin": 15.54,
+      "sunEarthMarsAngleDeg": 55.79
+    },
+    {
+      "date": "2027-08-18",
+      "deltaAu": 1.8738,
+      "oneWayDelayMin": 15.58,
+      "sunEarthMarsAngleDeg": 55.46
+    },
+    {
+      "date": "2027-08-19",
+      "deltaAu": 1.8792,
+      "oneWayDelayMin": 15.63,
+      "sunEarthMarsAngleDeg": 55.13
+    },
+    {
+      "date": "2027-08-20",
+      "deltaAu": 1.8845,
+      "oneWayDelayMin": 15.67,
+      "sunEarthMarsAngleDeg": 54.8
+    },
+    {
+      "date": "2027-08-21",
+      "deltaAu": 1.8899,
+      "oneWayDelayMin": 15.72,
+      "sunEarthMarsAngleDeg": 54.48
+    },
+    {
+      "date": "2027-08-22",
+      "deltaAu": 1.8951,
+      "oneWayDelayMin": 15.76,
+      "sunEarthMarsAngleDeg": 54.15
+    },
+    {
+      "date": "2027-08-23",
+      "deltaAu": 1.9004,
+      "oneWayDelayMin": 15.8,
+      "sunEarthMarsAngleDeg": 53.82
+    },
+    {
+      "date": "2027-08-24",
+      "deltaAu": 1.9056,
+      "oneWayDelayMin": 15.85,
+      "sunEarthMarsAngleDeg": 53.5
+    },
+    {
+      "date": "2027-08-25",
+      "deltaAu": 1.9108,
+      "oneWayDelayMin": 15.89,
+      "sunEarthMarsAngleDeg": 53.17
+    },
+    {
+      "date": "2027-08-26",
+      "deltaAu": 1.9159,
+      "oneWayDelayMin": 15.93,
+      "sunEarthMarsAngleDeg": 52.85
+    },
+    {
+      "date": "2027-08-27",
+      "deltaAu": 1.921,
+      "oneWayDelayMin": 15.98,
+      "sunEarthMarsAngleDeg": 52.53
+    },
+    {
+      "date": "2027-08-28",
+      "deltaAu": 1.926,
+      "oneWayDelayMin": 16.02,
+      "sunEarthMarsAngleDeg": 52.21
+    },
+    {
+      "date": "2027-08-29",
+      "deltaAu": 1.931,
+      "oneWayDelayMin": 16.06,
+      "sunEarthMarsAngleDeg": 51.89
+    },
+    {
+      "date": "2027-08-30",
+      "deltaAu": 1.936,
+      "oneWayDelayMin": 16.1,
+      "sunEarthMarsAngleDeg": 51.57
+    },
+    {
+      "date": "2027-08-31",
+      "deltaAu": 1.9409,
+      "oneWayDelayMin": 16.14,
+      "sunEarthMarsAngleDeg": 51.25
+    },
+    {
+      "date": "2027-09-01",
+      "deltaAu": 1.9458,
+      "oneWayDelayMin": 16.18,
+      "sunEarthMarsAngleDeg": 50.94
+    },
+    {
+      "date": "2027-09-02",
+      "deltaAu": 1.9506,
+      "oneWayDelayMin": 16.22,
+      "sunEarthMarsAngleDeg": 50.62
+    },
+    {
+      "date": "2027-09-03",
+      "deltaAu": 1.9554,
+      "oneWayDelayMin": 16.26,
+      "sunEarthMarsAngleDeg": 50.31
+    },
+    {
+      "date": "2027-09-04",
+      "deltaAu": 1.9602,
+      "oneWayDelayMin": 16.3,
+      "sunEarthMarsAngleDeg": 50
+    },
+    {
+      "date": "2027-09-05",
+      "deltaAu": 1.9649,
+      "oneWayDelayMin": 16.34,
+      "sunEarthMarsAngleDeg": 49.68
+    },
+    {
+      "date": "2027-09-06",
+      "deltaAu": 1.9696,
+      "oneWayDelayMin": 16.38,
+      "sunEarthMarsAngleDeg": 49.37
+    },
+    {
+      "date": "2027-09-07",
+      "deltaAu": 1.9742,
+      "oneWayDelayMin": 16.42,
+      "sunEarthMarsAngleDeg": 49.06
+    },
+    {
+      "date": "2027-09-08",
+      "deltaAu": 1.9788,
+      "oneWayDelayMin": 16.46,
+      "sunEarthMarsAngleDeg": 48.75
+    },
+    {
+      "date": "2027-09-09",
+      "deltaAu": 1.9834,
+      "oneWayDelayMin": 16.5,
+      "sunEarthMarsAngleDeg": 48.45
+    },
+    {
+      "date": "2027-09-10",
+      "deltaAu": 1.9879,
+      "oneWayDelayMin": 16.53,
+      "sunEarthMarsAngleDeg": 48.14
+    },
+    {
+      "date": "2027-09-11",
+      "deltaAu": 1.9924,
+      "oneWayDelayMin": 16.57,
+      "sunEarthMarsAngleDeg": 47.83
+    },
+    {
+      "date": "2027-09-12",
+      "deltaAu": 1.9968,
+      "oneWayDelayMin": 16.61,
+      "sunEarthMarsAngleDeg": 47.53
+    },
+    {
+      "date": "2027-09-13",
+      "deltaAu": 2.0012,
+      "oneWayDelayMin": 16.64,
+      "sunEarthMarsAngleDeg": 47.22
+    },
+    {
+      "date": "2027-09-14",
+      "deltaAu": 2.0055,
+      "oneWayDelayMin": 16.68,
+      "sunEarthMarsAngleDeg": 46.92
+    },
+    {
+      "date": "2027-09-15",
+      "deltaAu": 2.0099,
+      "oneWayDelayMin": 16.72,
+      "sunEarthMarsAngleDeg": 46.62
+    },
+    {
+      "date": "2027-09-16",
+      "deltaAu": 2.0141,
+      "oneWayDelayMin": 16.75,
+      "sunEarthMarsAngleDeg": 46.32
+    },
+    {
+      "date": "2027-09-17",
+      "deltaAu": 2.0184,
+      "oneWayDelayMin": 16.79,
+      "sunEarthMarsAngleDeg": 46.01
+    },
+    {
+      "date": "2027-09-18",
+      "deltaAu": 2.0226,
+      "oneWayDelayMin": 16.82,
+      "sunEarthMarsAngleDeg": 45.71
+    },
+    {
+      "date": "2027-09-19",
+      "deltaAu": 2.0268,
+      "oneWayDelayMin": 16.86,
+      "sunEarthMarsAngleDeg": 45.42
+    },
+    {
+      "date": "2027-09-20",
+      "deltaAu": 2.0309,
+      "oneWayDelayMin": 16.89,
+      "sunEarthMarsAngleDeg": 45.12
+    },
+    {
+      "date": "2027-09-21",
+      "deltaAu": 2.035,
+      "oneWayDelayMin": 16.92,
+      "sunEarthMarsAngleDeg": 44.82
+    },
+    {
+      "date": "2027-09-22",
+      "deltaAu": 2.0391,
+      "oneWayDelayMin": 16.96,
+      "sunEarthMarsAngleDeg": 44.52
+    },
+    {
+      "date": "2027-09-23",
+      "deltaAu": 2.0431,
+      "oneWayDelayMin": 16.99,
+      "sunEarthMarsAngleDeg": 44.23
+    },
+    {
+      "date": "2027-09-24",
+      "deltaAu": 2.0471,
+      "oneWayDelayMin": 17.02,
+      "sunEarthMarsAngleDeg": 43.93
+    },
+    {
+      "date": "2027-09-25",
+      "deltaAu": 2.051,
+      "oneWayDelayMin": 17.06,
+      "sunEarthMarsAngleDeg": 43.64
+    },
+    {
+      "date": "2027-09-26",
+      "deltaAu": 2.0549,
+      "oneWayDelayMin": 17.09,
+      "sunEarthMarsAngleDeg": 43.34
+    },
+    {
+      "date": "2027-09-27",
+      "deltaAu": 2.0588,
+      "oneWayDelayMin": 17.12,
+      "sunEarthMarsAngleDeg": 43.05
+    },
+    {
+      "date": "2027-09-28",
+      "deltaAu": 2.0627,
+      "oneWayDelayMin": 17.15,
+      "sunEarthMarsAngleDeg": 42.76
+    },
+    {
+      "date": "2027-09-29",
+      "deltaAu": 2.0665,
+      "oneWayDelayMin": 17.19,
+      "sunEarthMarsAngleDeg": 42.47
+    },
+    {
+      "date": "2027-09-30",
+      "deltaAu": 2.0702,
+      "oneWayDelayMin": 17.22,
+      "sunEarthMarsAngleDeg": 42.17
+    },
+    {
+      "date": "2027-10-01",
+      "deltaAu": 2.074,
+      "oneWayDelayMin": 17.25,
+      "sunEarthMarsAngleDeg": 41.88
+    },
+    {
+      "date": "2027-10-02",
+      "deltaAu": 2.0777,
+      "oneWayDelayMin": 17.28,
+      "sunEarthMarsAngleDeg": 41.59
+    },
+    {
+      "date": "2027-10-03",
+      "deltaAu": 2.0813,
+      "oneWayDelayMin": 17.31,
+      "sunEarthMarsAngleDeg": 41.31
+    },
+    {
+      "date": "2027-10-04",
+      "deltaAu": 2.085,
+      "oneWayDelayMin": 17.34,
+      "sunEarthMarsAngleDeg": 41.02
+    },
+    {
+      "date": "2027-10-05",
+      "deltaAu": 2.0885,
+      "oneWayDelayMin": 17.37,
+      "sunEarthMarsAngleDeg": 40.73
+    },
+    {
+      "date": "2027-10-06",
+      "deltaAu": 2.0921,
+      "oneWayDelayMin": 17.4,
+      "sunEarthMarsAngleDeg": 40.45
+    },
+    {
+      "date": "2027-10-07",
+      "deltaAu": 2.0956,
+      "oneWayDelayMin": 17.43,
+      "sunEarthMarsAngleDeg": 40.16
+    },
+    {
+      "date": "2027-10-08",
+      "deltaAu": 2.0991,
+      "oneWayDelayMin": 17.46,
+      "sunEarthMarsAngleDeg": 39.88
+    },
+    {
+      "date": "2027-10-09",
+      "deltaAu": 2.1025,
+      "oneWayDelayMin": 17.49,
+      "sunEarthMarsAngleDeg": 39.59
+    },
+    {
+      "date": "2027-10-10",
+      "deltaAu": 2.1059,
+      "oneWayDelayMin": 17.51,
+      "sunEarthMarsAngleDeg": 39.31
+    },
+    {
+      "date": "2027-10-11",
+      "deltaAu": 2.1093,
+      "oneWayDelayMin": 17.54,
+      "sunEarthMarsAngleDeg": 39.03
+    },
+    {
+      "date": "2027-10-12",
+      "deltaAu": 2.1127,
+      "oneWayDelayMin": 17.57,
+      "sunEarthMarsAngleDeg": 38.74
+    },
+    {
+      "date": "2027-10-13",
+      "deltaAu": 2.116,
+      "oneWayDelayMin": 17.6,
+      "sunEarthMarsAngleDeg": 38.46
+    },
+    {
+      "date": "2027-10-14",
+      "deltaAu": 2.1192,
+      "oneWayDelayMin": 17.63,
+      "sunEarthMarsAngleDeg": 38.18
+    },
+    {
+      "date": "2027-10-15",
+      "deltaAu": 2.1225,
+      "oneWayDelayMin": 17.65,
+      "sunEarthMarsAngleDeg": 37.9
+    },
+    {
+      "date": "2027-10-16",
+      "deltaAu": 2.1257,
+      "oneWayDelayMin": 17.68,
+      "sunEarthMarsAngleDeg": 37.62
+    },
+    {
+      "date": "2027-10-17",
+      "deltaAu": 2.1289,
+      "oneWayDelayMin": 17.71,
+      "sunEarthMarsAngleDeg": 37.35
+    },
+    {
+      "date": "2027-10-18",
+      "deltaAu": 2.132,
+      "oneWayDelayMin": 17.73,
+      "sunEarthMarsAngleDeg": 37.07
+    },
+    {
+      "date": "2027-10-19",
+      "deltaAu": 2.1351,
+      "oneWayDelayMin": 17.76,
+      "sunEarthMarsAngleDeg": 36.79
+    },
+    {
+      "date": "2027-10-20",
+      "deltaAu": 2.1382,
+      "oneWayDelayMin": 17.78,
+      "sunEarthMarsAngleDeg": 36.51
+    },
+    {
+      "date": "2027-10-21",
+      "deltaAu": 2.1413,
+      "oneWayDelayMin": 17.81,
+      "sunEarthMarsAngleDeg": 36.24
+    },
+    {
+      "date": "2027-10-22",
+      "deltaAu": 2.1443,
+      "oneWayDelayMin": 17.83,
+      "sunEarthMarsAngleDeg": 35.96
+    },
+    {
+      "date": "2027-10-23",
+      "deltaAu": 2.1473,
+      "oneWayDelayMin": 17.86,
+      "sunEarthMarsAngleDeg": 35.69
+    },
+    {
+      "date": "2027-10-24",
+      "deltaAu": 2.1503,
+      "oneWayDelayMin": 17.88,
+      "sunEarthMarsAngleDeg": 35.41
+    },
+    {
+      "date": "2027-10-25",
+      "deltaAu": 2.1532,
+      "oneWayDelayMin": 17.91,
+      "sunEarthMarsAngleDeg": 35.14
+    },
+    {
+      "date": "2027-10-26",
+      "deltaAu": 2.1562,
+      "oneWayDelayMin": 17.93,
+      "sunEarthMarsAngleDeg": 34.87
+    },
+    {
+      "date": "2027-10-27",
+      "deltaAu": 2.159,
+      "oneWayDelayMin": 17.96,
+      "sunEarthMarsAngleDeg": 34.59
+    },
+    {
+      "date": "2027-10-28",
+      "deltaAu": 2.1619,
+      "oneWayDelayMin": 17.98,
+      "sunEarthMarsAngleDeg": 34.32
+    },
+    {
+      "date": "2027-10-29",
+      "deltaAu": 2.1647,
+      "oneWayDelayMin": 18,
+      "sunEarthMarsAngleDeg": 34.05
+    },
+    {
+      "date": "2027-10-30",
+      "deltaAu": 2.1675,
+      "oneWayDelayMin": 18.03,
+      "sunEarthMarsAngleDeg": 33.78
+    },
+    {
+      "date": "2027-10-31",
+      "deltaAu": 2.1703,
+      "oneWayDelayMin": 18.05,
+      "sunEarthMarsAngleDeg": 33.51
+    },
+    {
+      "date": "2027-11-01",
+      "deltaAu": 2.173,
+      "oneWayDelayMin": 18.07,
+      "sunEarthMarsAngleDeg": 33.24
+    },
+    {
+      "date": "2027-11-02",
+      "deltaAu": 2.1757,
+      "oneWayDelayMin": 18.09,
+      "sunEarthMarsAngleDeg": 32.97
+    },
+    {
+      "date": "2027-11-03",
+      "deltaAu": 2.1784,
+      "oneWayDelayMin": 18.12,
+      "sunEarthMarsAngleDeg": 32.7
+    },
+    {
+      "date": "2027-11-04",
+      "deltaAu": 2.181,
+      "oneWayDelayMin": 18.14,
+      "sunEarthMarsAngleDeg": 32.44
+    },
+    {
+      "date": "2027-11-05",
+      "deltaAu": 2.1836,
+      "oneWayDelayMin": 18.16,
+      "sunEarthMarsAngleDeg": 32.17
+    },
+    {
+      "date": "2027-11-06",
+      "deltaAu": 2.1862,
+      "oneWayDelayMin": 18.18,
+      "sunEarthMarsAngleDeg": 31.9
+    },
+    {
+      "date": "2027-11-07",
+      "deltaAu": 2.1888,
+      "oneWayDelayMin": 18.2,
+      "sunEarthMarsAngleDeg": 31.64
+    },
+    {
+      "date": "2027-11-08",
+      "deltaAu": 2.1913,
+      "oneWayDelayMin": 18.22,
+      "sunEarthMarsAngleDeg": 31.37
+    },
+    {
+      "date": "2027-11-09",
+      "deltaAu": 2.1938,
+      "oneWayDelayMin": 18.25,
+      "sunEarthMarsAngleDeg": 31.11
+    },
+    {
+      "date": "2027-11-10",
+      "deltaAu": 2.1963,
+      "oneWayDelayMin": 18.27,
+      "sunEarthMarsAngleDeg": 30.85
+    },
+    {
+      "date": "2027-11-11",
+      "deltaAu": 2.1987,
+      "oneWayDelayMin": 18.29,
+      "sunEarthMarsAngleDeg": 30.58
+    },
+    {
+      "date": "2027-11-12",
+      "deltaAu": 2.2011,
+      "oneWayDelayMin": 18.31,
+      "sunEarthMarsAngleDeg": 30.32
+    },
+    {
+      "date": "2027-11-13",
+      "deltaAu": 2.2035,
+      "oneWayDelayMin": 18.33,
+      "sunEarthMarsAngleDeg": 30.06
+    },
+    {
+      "date": "2027-11-14",
+      "deltaAu": 2.2059,
+      "oneWayDelayMin": 18.35,
+      "sunEarthMarsAngleDeg": 29.8
+    },
+    {
+      "date": "2027-11-15",
+      "deltaAu": 2.2083,
+      "oneWayDelayMin": 18.37,
+      "sunEarthMarsAngleDeg": 29.54
+    },
+    {
+      "date": "2027-11-16",
+      "deltaAu": 2.2106,
+      "oneWayDelayMin": 18.39,
+      "sunEarthMarsAngleDeg": 29.28
+    },
+    {
+      "date": "2027-11-17",
+      "deltaAu": 2.2129,
+      "oneWayDelayMin": 18.4,
+      "sunEarthMarsAngleDeg": 29.02
+    },
+    {
+      "date": "2027-11-18",
+      "deltaAu": 2.2152,
+      "oneWayDelayMin": 18.42,
+      "sunEarthMarsAngleDeg": 28.76
+    },
+    {
+      "date": "2027-11-19",
+      "deltaAu": 2.2175,
+      "oneWayDelayMin": 18.44,
+      "sunEarthMarsAngleDeg": 28.5
+    },
+    {
+      "date": "2027-11-20",
+      "deltaAu": 2.2197,
+      "oneWayDelayMin": 18.46,
+      "sunEarthMarsAngleDeg": 28.24
+    },
+    {
+      "date": "2027-11-21",
+      "deltaAu": 2.2219,
+      "oneWayDelayMin": 18.48,
+      "sunEarthMarsAngleDeg": 27.98
+    },
+    {
+      "date": "2027-11-22",
+      "deltaAu": 2.2241,
+      "oneWayDelayMin": 18.5,
+      "sunEarthMarsAngleDeg": 27.73
+    },
+    {
+      "date": "2027-11-23",
+      "deltaAu": 2.2263,
+      "oneWayDelayMin": 18.52,
+      "sunEarthMarsAngleDeg": 27.47
+    },
+    {
+      "date": "2027-11-24",
+      "deltaAu": 2.2285,
+      "oneWayDelayMin": 18.53,
+      "sunEarthMarsAngleDeg": 27.21
+    },
+    {
+      "date": "2027-11-25",
+      "deltaAu": 2.2306,
+      "oneWayDelayMin": 18.55,
+      "sunEarthMarsAngleDeg": 26.96
+    },
+    {
+      "date": "2027-11-26",
+      "deltaAu": 2.2327,
+      "oneWayDelayMin": 18.57,
+      "sunEarthMarsAngleDeg": 26.7
+    },
+    {
+      "date": "2027-11-27",
+      "deltaAu": 2.2348,
+      "oneWayDelayMin": 18.59,
+      "sunEarthMarsAngleDeg": 26.45
+    },
+    {
+      "date": "2027-11-28",
+      "deltaAu": 2.2369,
+      "oneWayDelayMin": 18.6,
+      "sunEarthMarsAngleDeg": 26.19
+    },
+    {
+      "date": "2027-11-29",
+      "deltaAu": 2.2389,
+      "oneWayDelayMin": 18.62,
+      "sunEarthMarsAngleDeg": 25.94
+    },
+    {
+      "date": "2027-11-30",
+      "deltaAu": 2.2409,
+      "oneWayDelayMin": 18.64,
+      "sunEarthMarsAngleDeg": 25.69
+    },
+    {
+      "date": "2027-12-01",
+      "deltaAu": 2.2429,
+      "oneWayDelayMin": 18.65,
+      "sunEarthMarsAngleDeg": 25.43
+    },
+    {
+      "date": "2027-12-02",
+      "deltaAu": 2.2449,
+      "oneWayDelayMin": 18.67,
+      "sunEarthMarsAngleDeg": 25.18
+    },
+    {
+      "date": "2027-12-03",
+      "deltaAu": 2.2469,
+      "oneWayDelayMin": 18.69,
+      "sunEarthMarsAngleDeg": 24.93
+    },
+    {
+      "date": "2027-12-04",
+      "deltaAu": 2.2488,
+      "oneWayDelayMin": 18.7,
+      "sunEarthMarsAngleDeg": 24.68
+    },
+    {
+      "date": "2027-12-05",
+      "deltaAu": 2.2507,
+      "oneWayDelayMin": 18.72,
+      "sunEarthMarsAngleDeg": 24.43
+    },
+    {
+      "date": "2027-12-06",
+      "deltaAu": 2.2526,
+      "oneWayDelayMin": 18.73,
+      "sunEarthMarsAngleDeg": 24.18
+    },
+    {
+      "date": "2027-12-07",
+      "deltaAu": 2.2545,
+      "oneWayDelayMin": 18.75,
+      "sunEarthMarsAngleDeg": 23.93
+    },
+    {
+      "date": "2027-12-08",
+      "deltaAu": 2.2563,
+      "oneWayDelayMin": 18.77,
+      "sunEarthMarsAngleDeg": 23.68
+    },
+    {
+      "date": "2027-12-09",
+      "deltaAu": 2.2582,
+      "oneWayDelayMin": 18.78,
+      "sunEarthMarsAngleDeg": 23.43
+    },
+    {
+      "date": "2027-12-10",
+      "deltaAu": 2.26,
+      "oneWayDelayMin": 18.8,
+      "sunEarthMarsAngleDeg": 23.19
+    },
+    {
+      "date": "2027-12-11",
+      "deltaAu": 2.2618,
+      "oneWayDelayMin": 18.81,
+      "sunEarthMarsAngleDeg": 22.94
+    },
+    {
+      "date": "2027-12-12",
+      "deltaAu": 2.2636,
+      "oneWayDelayMin": 18.83,
+      "sunEarthMarsAngleDeg": 22.69
+    },
+    {
+      "date": "2027-12-13",
+      "deltaAu": 2.2654,
+      "oneWayDelayMin": 18.84,
+      "sunEarthMarsAngleDeg": 22.45
+    },
+    {
+      "date": "2027-12-14",
+      "deltaAu": 2.2671,
+      "oneWayDelayMin": 18.86,
+      "sunEarthMarsAngleDeg": 22.2
+    },
+    {
+      "date": "2027-12-15",
+      "deltaAu": 2.2689,
+      "oneWayDelayMin": 18.87,
+      "sunEarthMarsAngleDeg": 21.96
+    },
+    {
+      "date": "2027-12-16",
+      "deltaAu": 2.2706,
+      "oneWayDelayMin": 18.88,
+      "sunEarthMarsAngleDeg": 21.71
+    },
+    {
+      "date": "2027-12-17",
+      "deltaAu": 2.2723,
+      "oneWayDelayMin": 18.9,
+      "sunEarthMarsAngleDeg": 21.47
+    },
+    {
+      "date": "2027-12-18",
+      "deltaAu": 2.274,
+      "oneWayDelayMin": 18.91,
+      "sunEarthMarsAngleDeg": 21.23
+    },
+    {
+      "date": "2027-12-19",
+      "deltaAu": 2.2757,
+      "oneWayDelayMin": 18.93,
+      "sunEarthMarsAngleDeg": 20.98
+    },
+    {
+      "date": "2027-12-20",
+      "deltaAu": 2.2774,
+      "oneWayDelayMin": 18.94,
+      "sunEarthMarsAngleDeg": 20.74
+    },
+    {
+      "date": "2027-12-21",
+      "deltaAu": 2.279,
+      "oneWayDelayMin": 18.95,
+      "sunEarthMarsAngleDeg": 20.5
+    },
+    {
+      "date": "2027-12-22",
+      "deltaAu": 2.2807,
+      "oneWayDelayMin": 18.97,
+      "sunEarthMarsAngleDeg": 20.26
+    },
+    {
+      "date": "2027-12-23",
+      "deltaAu": 2.2823,
+      "oneWayDelayMin": 18.98,
+      "sunEarthMarsAngleDeg": 20.02
+    },
+    {
+      "date": "2027-12-24",
+      "deltaAu": 2.2839,
+      "oneWayDelayMin": 18.99,
+      "sunEarthMarsAngleDeg": 19.78
+    },
+    {
+      "date": "2027-12-25",
+      "deltaAu": 2.2855,
+      "oneWayDelayMin": 19.01,
+      "sunEarthMarsAngleDeg": 19.54
+    },
+    {
+      "date": "2027-12-26",
+      "deltaAu": 2.2871,
+      "oneWayDelayMin": 19.02,
+      "sunEarthMarsAngleDeg": 19.3
+    },
+    {
+      "date": "2027-12-27",
+      "deltaAu": 2.2887,
+      "oneWayDelayMin": 19.03,
+      "sunEarthMarsAngleDeg": 19.06
+    },
+    {
+      "date": "2027-12-28",
+      "deltaAu": 2.2902,
+      "oneWayDelayMin": 19.05,
+      "sunEarthMarsAngleDeg": 18.82
+    },
+    {
+      "date": "2027-12-29",
+      "deltaAu": 2.2918,
+      "oneWayDelayMin": 19.06,
+      "sunEarthMarsAngleDeg": 18.58
+    },
+    {
+      "date": "2027-12-30",
+      "deltaAu": 2.2933,
+      "oneWayDelayMin": 19.07,
+      "sunEarthMarsAngleDeg": 18.34
+    },
+    {
+      "date": "2027-12-31",
+      "deltaAu": 2.2948,
+      "oneWayDelayMin": 19.09,
+      "sunEarthMarsAngleDeg": 18.1
+    },
+    {
+      "date": "2028-01-01",
+      "deltaAu": 2.2963,
+      "oneWayDelayMin": 19.1,
+      "sunEarthMarsAngleDeg": 17.87
+    },
+    {
+      "date": "2028-01-02",
+      "deltaAu": 2.2978,
+      "oneWayDelayMin": 19.11,
+      "sunEarthMarsAngleDeg": 17.63
+    },
+    {
+      "date": "2028-01-03",
+      "deltaAu": 2.2992,
+      "oneWayDelayMin": 19.12,
+      "sunEarthMarsAngleDeg": 17.4
+    },
+    {
+      "date": "2028-01-04",
+      "deltaAu": 2.3007,
+      "oneWayDelayMin": 19.13,
+      "sunEarthMarsAngleDeg": 17.16
+    },
+    {
+      "date": "2028-01-05",
+      "deltaAu": 2.3022,
+      "oneWayDelayMin": 19.15,
+      "sunEarthMarsAngleDeg": 16.93
+    },
+    {
+      "date": "2028-01-06",
+      "deltaAu": 2.3036,
+      "oneWayDelayMin": 19.16,
+      "sunEarthMarsAngleDeg": 16.69
+    },
+    {
+      "date": "2028-01-07",
+      "deltaAu": 2.305,
+      "oneWayDelayMin": 19.17,
+      "sunEarthMarsAngleDeg": 16.46
+    },
+    {
+      "date": "2028-01-08",
+      "deltaAu": 2.3064,
+      "oneWayDelayMin": 19.18,
+      "sunEarthMarsAngleDeg": 16.22
+    },
+    {
+      "date": "2028-01-09",
+      "deltaAu": 2.3078,
+      "oneWayDelayMin": 19.19,
+      "sunEarthMarsAngleDeg": 15.99
+    },
+    {
+      "date": "2028-01-10",
+      "deltaAu": 2.3092,
+      "oneWayDelayMin": 19.21,
+      "sunEarthMarsAngleDeg": 15.76
+    },
+    {
+      "date": "2028-01-11",
+      "deltaAu": 2.3106,
+      "oneWayDelayMin": 19.22,
+      "sunEarthMarsAngleDeg": 15.53
+    },
+    {
+      "date": "2028-01-12",
+      "deltaAu": 2.312,
+      "oneWayDelayMin": 19.23,
+      "sunEarthMarsAngleDeg": 15.3
+    },
+    {
+      "date": "2028-01-13",
+      "deltaAu": 2.3133,
+      "oneWayDelayMin": 19.24,
+      "sunEarthMarsAngleDeg": 15.06
+    },
+    {
+      "date": "2028-01-14",
+      "deltaAu": 2.3147,
+      "oneWayDelayMin": 19.25,
+      "sunEarthMarsAngleDeg": 14.83
+    },
+    {
+      "date": "2028-01-15",
+      "deltaAu": 2.3161,
+      "oneWayDelayMin": 19.26,
+      "sunEarthMarsAngleDeg": 14.6
+    },
+    {
+      "date": "2028-01-16",
+      "deltaAu": 2.3174,
+      "oneWayDelayMin": 19.27,
+      "sunEarthMarsAngleDeg": 14.37
+    },
+    {
+      "date": "2028-01-17",
+      "deltaAu": 2.3187,
+      "oneWayDelayMin": 19.28,
+      "sunEarthMarsAngleDeg": 14.14
+    },
+    {
+      "date": "2028-01-18",
+      "deltaAu": 2.3201,
+      "oneWayDelayMin": 19.3,
+      "sunEarthMarsAngleDeg": 13.92
+    },
+    {
+      "date": "2028-01-19",
+      "deltaAu": 2.3214,
+      "oneWayDelayMin": 19.31,
+      "sunEarthMarsAngleDeg": 13.69
+    },
+    {
+      "date": "2028-01-20",
+      "deltaAu": 2.3227,
+      "oneWayDelayMin": 19.32,
+      "sunEarthMarsAngleDeg": 13.46
+    },
+    {
+      "date": "2028-01-21",
+      "deltaAu": 2.324,
+      "oneWayDelayMin": 19.33,
+      "sunEarthMarsAngleDeg": 13.23
+    },
+    {
+      "date": "2028-01-22",
+      "deltaAu": 2.3253,
+      "oneWayDelayMin": 19.34,
+      "sunEarthMarsAngleDeg": 13
+    },
+    {
+      "date": "2028-01-23",
+      "deltaAu": 2.3265,
+      "oneWayDelayMin": 19.35,
+      "sunEarthMarsAngleDeg": 12.78
+    },
+    {
+      "date": "2028-01-24",
+      "deltaAu": 2.3278,
+      "oneWayDelayMin": 19.36,
+      "sunEarthMarsAngleDeg": 12.55
+    },
+    {
+      "date": "2028-01-25",
+      "deltaAu": 2.3291,
+      "oneWayDelayMin": 19.37,
+      "sunEarthMarsAngleDeg": 12.32
+    },
+    {
+      "date": "2028-01-26",
+      "deltaAu": 2.3303,
+      "oneWayDelayMin": 19.38,
+      "sunEarthMarsAngleDeg": 12.1
+    },
+    {
+      "date": "2028-01-27",
+      "deltaAu": 2.3316,
+      "oneWayDelayMin": 19.39,
+      "sunEarthMarsAngleDeg": 11.87
+    },
+    {
+      "date": "2028-01-28",
+      "deltaAu": 2.3328,
+      "oneWayDelayMin": 19.4,
+      "sunEarthMarsAngleDeg": 11.65
+    },
+    {
+      "date": "2028-01-29",
+      "deltaAu": 2.334,
+      "oneWayDelayMin": 19.41,
+      "sunEarthMarsAngleDeg": 11.42
+    },
+    {
+      "date": "2028-01-30",
+      "deltaAu": 2.3352,
+      "oneWayDelayMin": 19.42,
+      "sunEarthMarsAngleDeg": 11.2
+    },
+    {
+      "date": "2028-01-31",
+      "deltaAu": 2.3364,
+      "oneWayDelayMin": 19.43,
+      "sunEarthMarsAngleDeg": 10.97
+    },
+    {
+      "date": "2028-02-01",
+      "deltaAu": 2.3376,
+      "oneWayDelayMin": 19.44,
+      "sunEarthMarsAngleDeg": 10.75
+    },
+    {
+      "date": "2028-02-02",
+      "deltaAu": 2.3388,
+      "oneWayDelayMin": 19.45,
+      "sunEarthMarsAngleDeg": 10.53
+    },
+    {
+      "date": "2028-02-03",
+      "deltaAu": 2.34,
+      "oneWayDelayMin": 19.46,
+      "sunEarthMarsAngleDeg": 10.3
+    },
+    {
+      "date": "2028-02-04",
+      "deltaAu": 2.3412,
+      "oneWayDelayMin": 19.47,
+      "sunEarthMarsAngleDeg": 10.08
+    },
+    {
+      "date": "2028-02-05",
+      "deltaAu": 2.3424,
+      "oneWayDelayMin": 19.48,
+      "sunEarthMarsAngleDeg": 9.86
+    },
+    {
+      "date": "2028-02-06",
+      "deltaAu": 2.3435,
+      "oneWayDelayMin": 19.49,
+      "sunEarthMarsAngleDeg": 9.64
+    },
+    {
+      "date": "2028-02-07",
+      "deltaAu": 2.3447,
+      "oneWayDelayMin": 19.5,
+      "sunEarthMarsAngleDeg": 9.42
+    },
+    {
+      "date": "2028-02-08",
+      "deltaAu": 2.3458,
+      "oneWayDelayMin": 19.51,
+      "sunEarthMarsAngleDeg": 9.2
+    },
+    {
+      "date": "2028-02-09",
+      "deltaAu": 2.347,
+      "oneWayDelayMin": 19.52,
+      "sunEarthMarsAngleDeg": 8.98
+    },
+    {
+      "date": "2028-02-10",
+      "deltaAu": 2.3481,
+      "oneWayDelayMin": 19.53,
+      "sunEarthMarsAngleDeg": 8.76
+    },
+    {
+      "date": "2028-02-11",
+      "deltaAu": 2.3492,
+      "oneWayDelayMin": 19.54,
+      "sunEarthMarsAngleDeg": 8.54
+    },
+    {
+      "date": "2028-02-12",
+      "deltaAu": 2.3503,
+      "oneWayDelayMin": 19.55,
+      "sunEarthMarsAngleDeg": 8.32
+    },
+    {
+      "date": "2028-02-13",
+      "deltaAu": 2.3515,
+      "oneWayDelayMin": 19.56,
+      "sunEarthMarsAngleDeg": 8.1
+    },
+    {
+      "date": "2028-02-14",
+      "deltaAu": 2.3526,
+      "oneWayDelayMin": 19.57,
+      "sunEarthMarsAngleDeg": 7.88
+    },
+    {
+      "date": "2028-02-15",
+      "deltaAu": 2.3537,
+      "oneWayDelayMin": 19.57,
+      "sunEarthMarsAngleDeg": 7.66
+    },
+    {
+      "date": "2028-02-16",
+      "deltaAu": 2.3548,
+      "oneWayDelayMin": 19.58,
+      "sunEarthMarsAngleDeg": 7.44
+    },
+    {
+      "date": "2028-02-17",
+      "deltaAu": 2.3559,
+      "oneWayDelayMin": 19.59,
+      "sunEarthMarsAngleDeg": 7.23
+    },
+    {
+      "date": "2028-02-18",
+      "deltaAu": 2.357,
+      "oneWayDelayMin": 19.6,
+      "sunEarthMarsAngleDeg": 7.01
+    },
+    {
+      "date": "2028-02-19",
+      "deltaAu": 2.358,
+      "oneWayDelayMin": 19.61,
+      "sunEarthMarsAngleDeg": 6.79
+    },
+    {
+      "date": "2028-02-20",
+      "deltaAu": 2.3591,
+      "oneWayDelayMin": 19.62,
+      "sunEarthMarsAngleDeg": 6.57
+    },
+    {
+      "date": "2028-02-21",
+      "deltaAu": 2.3602,
+      "oneWayDelayMin": 19.63,
+      "sunEarthMarsAngleDeg": 6.36
+    },
+    {
+      "date": "2028-02-22",
+      "deltaAu": 2.3612,
+      "oneWayDelayMin": 19.64,
+      "sunEarthMarsAngleDeg": 6.14
+    },
+    {
+      "date": "2028-02-23",
+      "deltaAu": 2.3623,
+      "oneWayDelayMin": 19.65,
+      "sunEarthMarsAngleDeg": 5.93
+    },
+    {
+      "date": "2028-02-24",
+      "deltaAu": 2.3633,
+      "oneWayDelayMin": 19.66,
+      "sunEarthMarsAngleDeg": 5.71
+    },
+    {
+      "date": "2028-02-25",
+      "deltaAu": 2.3644,
+      "oneWayDelayMin": 19.66,
+      "sunEarthMarsAngleDeg": 5.49
+    },
+    {
+      "date": "2028-02-26",
+      "deltaAu": 2.3654,
+      "oneWayDelayMin": 19.67,
+      "sunEarthMarsAngleDeg": 5.28
+    },
+    {
+      "date": "2028-02-27",
+      "deltaAu": 2.3664,
+      "oneWayDelayMin": 19.68,
+      "sunEarthMarsAngleDeg": 5.07
+    },
+    {
+      "date": "2028-02-28",
+      "deltaAu": 2.3674,
+      "oneWayDelayMin": 19.69,
+      "sunEarthMarsAngleDeg": 4.85
+    },
+    {
+      "date": "2028-02-29",
+      "deltaAu": 2.3684,
+      "oneWayDelayMin": 19.7,
+      "sunEarthMarsAngleDeg": 4.64
+    },
+    {
+      "date": "2028-03-01",
+      "deltaAu": 2.3694,
+      "oneWayDelayMin": 19.71,
+      "sunEarthMarsAngleDeg": 4.43
+    },
+    {
+      "date": "2028-03-02",
+      "deltaAu": 2.3704,
+      "oneWayDelayMin": 19.71,
+      "sunEarthMarsAngleDeg": 4.21
+    },
+    {
+      "date": "2028-03-03",
+      "deltaAu": 2.3714,
+      "oneWayDelayMin": 19.72,
+      "sunEarthMarsAngleDeg": 4
+    },
+    {
+      "date": "2028-03-04",
+      "deltaAu": 2.3723,
+      "oneWayDelayMin": 19.73,
+      "sunEarthMarsAngleDeg": 3.79
+    },
+    {
+      "date": "2028-03-05",
+      "deltaAu": 2.3733,
+      "oneWayDelayMin": 19.74,
+      "sunEarthMarsAngleDeg": 3.58
+    },
+    {
+      "date": "2028-03-06",
+      "deltaAu": 2.3743,
+      "oneWayDelayMin": 19.75,
+      "sunEarthMarsAngleDeg": 3.37
+    },
+    {
+      "date": "2028-03-07",
+      "deltaAu": 2.3752,
+      "oneWayDelayMin": 19.75,
+      "sunEarthMarsAngleDeg": 3.16
+    },
+    {
+      "date": "2028-03-08",
+      "deltaAu": 2.3761,
+      "oneWayDelayMin": 19.76,
+      "sunEarthMarsAngleDeg": 2.95
+    },
+    {
+      "date": "2028-03-09",
+      "deltaAu": 2.3771,
+      "oneWayDelayMin": 19.77,
+      "sunEarthMarsAngleDeg": 2.75
+    },
+    {
+      "date": "2028-03-10",
+      "deltaAu": 2.378,
+      "oneWayDelayMin": 19.78,
+      "sunEarthMarsAngleDeg": 2.54
+    },
+    {
+      "date": "2028-03-11",
+      "deltaAu": 2.3789,
+      "oneWayDelayMin": 19.78,
+      "sunEarthMarsAngleDeg": 2.34
+    },
+    {
+      "date": "2028-03-12",
+      "deltaAu": 2.3798,
+      "oneWayDelayMin": 19.79,
+      "sunEarthMarsAngleDeg": 2.14
+    },
+    {
+      "date": "2028-03-13",
+      "deltaAu": 2.3807,
+      "oneWayDelayMin": 19.8,
+      "sunEarthMarsAngleDeg": 1.94
+    },
+    {
+      "date": "2028-03-14",
+      "deltaAu": 2.3816,
+      "oneWayDelayMin": 19.81,
+      "sunEarthMarsAngleDeg": 1.75
+    },
+    {
+      "date": "2028-03-15",
+      "deltaAu": 2.3825,
+      "oneWayDelayMin": 19.81,
+      "sunEarthMarsAngleDeg": 1.56
+    },
+    {
+      "date": "2028-03-16",
+      "deltaAu": 2.3834,
+      "oneWayDelayMin": 19.82,
+      "sunEarthMarsAngleDeg": 1.39
+    },
+    {
+      "date": "2028-03-17",
+      "deltaAu": 2.3843,
+      "oneWayDelayMin": 19.83,
+      "sunEarthMarsAngleDeg": 1.22
+    },
+    {
+      "date": "2028-03-18",
+      "deltaAu": 2.3851,
+      "oneWayDelayMin": 19.84,
+      "sunEarthMarsAngleDeg": 1.07
+    },
+    {
+      "date": "2028-03-19",
+      "deltaAu": 2.386,
+      "oneWayDelayMin": 19.84,
+      "sunEarthMarsAngleDeg": 0.94
+    },
+    {
+      "date": "2028-03-20",
+      "deltaAu": 2.3869,
+      "oneWayDelayMin": 19.85,
+      "sunEarthMarsAngleDeg": 0.85
+    },
+    {
+      "date": "2028-03-21",
+      "deltaAu": 2.3877,
+      "oneWayDelayMin": 19.86,
+      "sunEarthMarsAngleDeg": 0.81
+    },
+    {
+      "date": "2028-03-22",
+      "deltaAu": 2.3885,
+      "oneWayDelayMin": 19.86,
+      "sunEarthMarsAngleDeg": 0.83
+    },
+    {
+      "date": "2028-03-23",
+      "deltaAu": 2.3893,
+      "oneWayDelayMin": 19.87,
+      "sunEarthMarsAngleDeg": 0.89
+    },
+    {
+      "date": "2028-03-24",
+      "deltaAu": 2.3901,
+      "oneWayDelayMin": 19.88,
+      "sunEarthMarsAngleDeg": 1
+    },
+    {
+      "date": "2028-03-25",
+      "deltaAu": 2.3909,
+      "oneWayDelayMin": 19.88,
+      "sunEarthMarsAngleDeg": 1.14
+    },
+    {
+      "date": "2028-03-26",
+      "deltaAu": 2.3917,
+      "oneWayDelayMin": 19.89,
+      "sunEarthMarsAngleDeg": 1.3
+    },
+    {
+      "date": "2028-03-27",
+      "deltaAu": 2.3925,
+      "oneWayDelayMin": 19.9,
+      "sunEarthMarsAngleDeg": 1.48
+    },
+    {
+      "date": "2028-03-28",
+      "deltaAu": 2.3932,
+      "oneWayDelayMin": 19.9,
+      "sunEarthMarsAngleDeg": 1.66
+    },
+    {
+      "date": "2028-03-29",
+      "deltaAu": 2.394,
+      "oneWayDelayMin": 19.91,
+      "sunEarthMarsAngleDeg": 1.85
+    },
+    {
+      "date": "2028-03-30",
+      "deltaAu": 2.3947,
+      "oneWayDelayMin": 19.92,
+      "sunEarthMarsAngleDeg": 2.05
+    },
+    {
+      "date": "2028-03-31",
+      "deltaAu": 2.3954,
+      "oneWayDelayMin": 19.92,
+      "sunEarthMarsAngleDeg": 2.24
+    },
+    {
+      "date": "2028-04-01",
+      "deltaAu": 2.3961,
+      "oneWayDelayMin": 19.93,
+      "sunEarthMarsAngleDeg": 2.45
+    },
+    {
+      "date": "2028-04-02",
+      "deltaAu": 2.3968,
+      "oneWayDelayMin": 19.93,
+      "sunEarthMarsAngleDeg": 2.65
+    },
+    {
+      "date": "2028-04-03",
+      "deltaAu": 2.3975,
+      "oneWayDelayMin": 19.94,
+      "sunEarthMarsAngleDeg": 2.85
+    },
+    {
+      "date": "2028-04-04",
+      "deltaAu": 2.3982,
+      "oneWayDelayMin": 19.94,
+      "sunEarthMarsAngleDeg": 3.06
+    },
+    {
+      "date": "2028-04-05",
+      "deltaAu": 2.3988,
+      "oneWayDelayMin": 19.95,
+      "sunEarthMarsAngleDeg": 3.27
+    },
+    {
+      "date": "2028-04-06",
+      "deltaAu": 2.3995,
+      "oneWayDelayMin": 19.96,
+      "sunEarthMarsAngleDeg": 3.48
+    },
+    {
+      "date": "2028-04-07",
+      "deltaAu": 2.4001,
+      "oneWayDelayMin": 19.96,
+      "sunEarthMarsAngleDeg": 3.69
+    },
+    {
+      "date": "2028-04-08",
+      "deltaAu": 2.4007,
+      "oneWayDelayMin": 19.97,
+      "sunEarthMarsAngleDeg": 3.9
+    },
+    {
+      "date": "2028-04-09",
+      "deltaAu": 2.4013,
+      "oneWayDelayMin": 19.97,
+      "sunEarthMarsAngleDeg": 4.11
+    },
+    {
+      "date": "2028-04-10",
+      "deltaAu": 2.4019,
+      "oneWayDelayMin": 19.98,
+      "sunEarthMarsAngleDeg": 4.32
+    },
+    {
+      "date": "2028-04-11",
+      "deltaAu": 2.4025,
+      "oneWayDelayMin": 19.98,
+      "sunEarthMarsAngleDeg": 4.53
+    },
+    {
+      "date": "2028-04-12",
+      "deltaAu": 2.4031,
+      "oneWayDelayMin": 19.99,
+      "sunEarthMarsAngleDeg": 4.74
+    },
+    {
+      "date": "2028-04-13",
+      "deltaAu": 2.4036,
+      "oneWayDelayMin": 19.99,
+      "sunEarthMarsAngleDeg": 4.96
+    },
+    {
+      "date": "2028-04-14",
+      "deltaAu": 2.4042,
+      "oneWayDelayMin": 20,
+      "sunEarthMarsAngleDeg": 5.17
+    },
+    {
+      "date": "2028-04-15",
+      "deltaAu": 2.4047,
+      "oneWayDelayMin": 20,
+      "sunEarthMarsAngleDeg": 5.38
+    },
+    {
+      "date": "2028-04-16",
+      "deltaAu": 2.4052,
+      "oneWayDelayMin": 20,
+      "sunEarthMarsAngleDeg": 5.6
+    },
+    {
+      "date": "2028-04-17",
+      "deltaAu": 2.4057,
+      "oneWayDelayMin": 20.01,
+      "sunEarthMarsAngleDeg": 5.81
+    },
+    {
+      "date": "2028-04-18",
+      "deltaAu": 2.4062,
+      "oneWayDelayMin": 20.01,
+      "sunEarthMarsAngleDeg": 6.03
+    },
+    {
+      "date": "2028-04-19",
+      "deltaAu": 2.4067,
+      "oneWayDelayMin": 20.02,
+      "sunEarthMarsAngleDeg": 6.24
+    },
+    {
+      "date": "2028-04-20",
+      "deltaAu": 2.4071,
+      "oneWayDelayMin": 20.02,
+      "sunEarthMarsAngleDeg": 6.46
+    },
+    {
+      "date": "2028-04-21",
+      "deltaAu": 2.4076,
+      "oneWayDelayMin": 20.02,
+      "sunEarthMarsAngleDeg": 6.68
+    },
+    {
+      "date": "2028-04-22",
+      "deltaAu": 2.408,
+      "oneWayDelayMin": 20.03,
+      "sunEarthMarsAngleDeg": 6.89
+    },
+    {
+      "date": "2028-04-23",
+      "deltaAu": 2.4084,
+      "oneWayDelayMin": 20.03,
+      "sunEarthMarsAngleDeg": 7.11
+    },
+    {
+      "date": "2028-04-24",
+      "deltaAu": 2.4087,
+      "oneWayDelayMin": 20.03,
+      "sunEarthMarsAngleDeg": 7.33
+    },
+    {
+      "date": "2028-04-25",
+      "deltaAu": 2.4091,
+      "oneWayDelayMin": 20.04,
+      "sunEarthMarsAngleDeg": 7.54
+    },
+    {
+      "date": "2028-04-26",
+      "deltaAu": 2.4094,
+      "oneWayDelayMin": 20.04,
+      "sunEarthMarsAngleDeg": 7.76
+    },
+    {
+      "date": "2028-04-27",
+      "deltaAu": 2.4098,
+      "oneWayDelayMin": 20.04,
+      "sunEarthMarsAngleDeg": 7.98
+    },
+    {
+      "date": "2028-04-28",
+      "deltaAu": 2.4101,
+      "oneWayDelayMin": 20.04,
+      "sunEarthMarsAngleDeg": 8.2
+    },
+    {
+      "date": "2028-04-29",
+      "deltaAu": 2.4103,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 8.42
+    },
+    {
+      "date": "2028-04-30",
+      "deltaAu": 2.4106,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 8.64
+    },
+    {
+      "date": "2028-05-01",
+      "deltaAu": 2.4108,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 8.86
+    },
+    {
+      "date": "2028-05-02",
+      "deltaAu": 2.411,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 9.08
+    },
+    {
+      "date": "2028-05-03",
+      "deltaAu": 2.4112,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 9.3
+    },
+    {
+      "date": "2028-05-04",
+      "deltaAu": 2.4114,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 9.52
+    },
+    {
+      "date": "2028-05-05",
+      "deltaAu": 2.4116,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 9.74
+    },
+    {
+      "date": "2028-05-06",
+      "deltaAu": 2.4117,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 9.96
+    },
+    {
+      "date": "2028-05-07",
+      "deltaAu": 2.4118,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 10.19
+    },
+    {
+      "date": "2028-05-08",
+      "deltaAu": 2.4119,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 10.41
+    },
+    {
+      "date": "2028-05-09",
+      "deltaAu": 2.412,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 10.63
+    },
+    {
+      "date": "2028-05-10",
+      "deltaAu": 2.412,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 10.86
+    },
+    {
+      "date": "2028-05-11",
+      "deltaAu": 2.4121,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 11.08
+    },
+    {
+      "date": "2028-05-12",
+      "deltaAu": 2.4121,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 11.3
+    },
+    {
+      "date": "2028-05-13",
+      "deltaAu": 2.4121,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 11.53
+    },
+    {
+      "date": "2028-05-14",
+      "deltaAu": 2.412,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 11.75
+    },
+    {
+      "date": "2028-05-15",
+      "deltaAu": 2.412,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 11.98
+    },
+    {
+      "date": "2028-05-16",
+      "deltaAu": 2.4119,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 12.21
+    },
+    {
+      "date": "2028-05-17",
+      "deltaAu": 2.4118,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 12.43
+    },
+    {
+      "date": "2028-05-18",
+      "deltaAu": 2.4116,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 12.66
+    },
+    {
+      "date": "2028-05-19",
+      "deltaAu": 2.4115,
+      "oneWayDelayMin": 20.06,
+      "sunEarthMarsAngleDeg": 12.89
+    },
+    {
+      "date": "2028-05-20",
+      "deltaAu": 2.4113,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 13.12
+    },
+    {
+      "date": "2028-05-21",
+      "deltaAu": 2.4111,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 13.35
+    },
+    {
+      "date": "2028-05-22",
+      "deltaAu": 2.4108,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 13.58
+    },
+    {
+      "date": "2028-05-23",
+      "deltaAu": 2.4105,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 13.81
+    },
+    {
+      "date": "2028-05-24",
+      "deltaAu": 2.4102,
+      "oneWayDelayMin": 20.05,
+      "sunEarthMarsAngleDeg": 14.04
+    },
+    {
+      "date": "2028-05-25",
+      "deltaAu": 2.4099,
+      "oneWayDelayMin": 20.04,
+      "sunEarthMarsAngleDeg": 14.27
+    },
+    {
+      "date": "2028-05-26",
+      "deltaAu": 2.4095,
+      "oneWayDelayMin": 20.04,
+      "sunEarthMarsAngleDeg": 14.5
+    },
+    {
+      "date": "2028-05-27",
+      "deltaAu": 2.4091,
+      "oneWayDelayMin": 20.04,
+      "sunEarthMarsAngleDeg": 14.73
+    },
+    {
+      "date": "2028-05-28",
+      "deltaAu": 2.4087,
+      "oneWayDelayMin": 20.03,
+      "sunEarthMarsAngleDeg": 14.97
+    },
+    {
+      "date": "2028-05-29",
+      "deltaAu": 2.4083,
+      "oneWayDelayMin": 20.03,
+      "sunEarthMarsAngleDeg": 15.2
+    },
+    {
+      "date": "2028-05-30",
+      "deltaAu": 2.4078,
+      "oneWayDelayMin": 20.02,
+      "sunEarthMarsAngleDeg": 15.43
+    },
+    {
+      "date": "2028-05-31",
+      "deltaAu": 2.4073,
+      "oneWayDelayMin": 20.02,
+      "sunEarthMarsAngleDeg": 15.67
+    },
+    {
+      "date": "2028-06-01",
+      "deltaAu": 2.4067,
+      "oneWayDelayMin": 20.02,
+      "sunEarthMarsAngleDeg": 15.9
+    },
+    {
+      "date": "2028-06-02",
+      "deltaAu": 2.4062,
+      "oneWayDelayMin": 20.01,
+      "sunEarthMarsAngleDeg": 16.14
+    },
+    {
+      "date": "2028-06-03",
+      "deltaAu": 2.4056,
+      "oneWayDelayMin": 20.01,
+      "sunEarthMarsAngleDeg": 16.38
+    },
+    {
+      "date": "2028-06-04",
+      "deltaAu": 2.4049,
+      "oneWayDelayMin": 20,
+      "sunEarthMarsAngleDeg": 16.62
+    },
+    {
+      "date": "2028-06-05",
+      "deltaAu": 2.4043,
+      "oneWayDelayMin": 20,
+      "sunEarthMarsAngleDeg": 16.85
+    },
+    {
+      "date": "2028-06-06",
+      "deltaAu": 2.4036,
+      "oneWayDelayMin": 19.99,
+      "sunEarthMarsAngleDeg": 17.09
+    },
+    {
+      "date": "2028-06-07",
+      "deltaAu": 2.4028,
+      "oneWayDelayMin": 19.98,
+      "sunEarthMarsAngleDeg": 17.33
+    },
+    {
+      "date": "2028-06-08",
+      "deltaAu": 2.4021,
+      "oneWayDelayMin": 19.98,
+      "sunEarthMarsAngleDeg": 17.57
+    },
+    {
+      "date": "2028-06-09",
+      "deltaAu": 2.4013,
+      "oneWayDelayMin": 19.97,
+      "sunEarthMarsAngleDeg": 17.81
+    },
+    {
+      "date": "2028-06-10",
+      "deltaAu": 2.4005,
+      "oneWayDelayMin": 19.96,
+      "sunEarthMarsAngleDeg": 18.05
+    },
+    {
+      "date": "2028-06-11",
+      "deltaAu": 2.3996,
+      "oneWayDelayMin": 19.96,
+      "sunEarthMarsAngleDeg": 18.29
+    },
+    {
+      "date": "2028-06-12",
+      "deltaAu": 2.3987,
+      "oneWayDelayMin": 19.95,
+      "sunEarthMarsAngleDeg": 18.54
+    },
+    {
+      "date": "2028-06-13",
+      "deltaAu": 2.3978,
+      "oneWayDelayMin": 19.94,
+      "sunEarthMarsAngleDeg": 18.78
+    },
+    {
+      "date": "2028-06-14",
+      "deltaAu": 2.3969,
+      "oneWayDelayMin": 19.93,
+      "sunEarthMarsAngleDeg": 19.03
+    },
+    {
+      "date": "2028-06-15",
+      "deltaAu": 2.3959,
+      "oneWayDelayMin": 19.93,
+      "sunEarthMarsAngleDeg": 19.27
+    },
+    {
+      "date": "2028-06-16",
+      "deltaAu": 2.3949,
+      "oneWayDelayMin": 19.92,
+      "sunEarthMarsAngleDeg": 19.52
+    },
+    {
+      "date": "2028-06-17",
+      "deltaAu": 2.3938,
+      "oneWayDelayMin": 19.91,
+      "sunEarthMarsAngleDeg": 19.76
+    },
+    {
+      "date": "2028-06-18",
+      "deltaAu": 2.3927,
+      "oneWayDelayMin": 19.9,
+      "sunEarthMarsAngleDeg": 20.01
+    },
+    {
+      "date": "2028-06-19",
+      "deltaAu": 2.3916,
+      "oneWayDelayMin": 19.89,
+      "sunEarthMarsAngleDeg": 20.26
+    },
+    {
+      "date": "2028-06-20",
+      "deltaAu": 2.3904,
+      "oneWayDelayMin": 19.88,
+      "sunEarthMarsAngleDeg": 20.51
+    },
+    {
+      "date": "2028-06-21",
+      "deltaAu": 2.3892,
+      "oneWayDelayMin": 19.87,
+      "sunEarthMarsAngleDeg": 20.76
+    },
+    {
+      "date": "2028-06-22",
+      "deltaAu": 2.3879,
+      "oneWayDelayMin": 19.86,
+      "sunEarthMarsAngleDeg": 21.01
+    },
+    {
+      "date": "2028-06-23",
+      "deltaAu": 2.3866,
+      "oneWayDelayMin": 19.85,
+      "sunEarthMarsAngleDeg": 21.26
+    },
+    {
+      "date": "2028-06-24",
+      "deltaAu": 2.3853,
+      "oneWayDelayMin": 19.84,
+      "sunEarthMarsAngleDeg": 21.51
+    },
+    {
+      "date": "2028-06-25",
+      "deltaAu": 2.3839,
+      "oneWayDelayMin": 19.83,
+      "sunEarthMarsAngleDeg": 21.77
+    },
+    {
+      "date": "2028-06-26",
+      "deltaAu": 2.3825,
+      "oneWayDelayMin": 19.81,
+      "sunEarthMarsAngleDeg": 22.02
+    },
+    {
+      "date": "2028-06-27",
+      "deltaAu": 2.3811,
+      "oneWayDelayMin": 19.8,
+      "sunEarthMarsAngleDeg": 22.28
+    },
+    {
+      "date": "2028-06-28",
+      "deltaAu": 2.3796,
+      "oneWayDelayMin": 19.79,
+      "sunEarthMarsAngleDeg": 22.53
+    },
+    {
+      "date": "2028-06-29",
+      "deltaAu": 2.378,
+      "oneWayDelayMin": 19.78,
+      "sunEarthMarsAngleDeg": 22.79
+    },
+    {
+      "date": "2028-06-30",
+      "deltaAu": 2.3765,
+      "oneWayDelayMin": 19.76,
+      "sunEarthMarsAngleDeg": 23.05
+    },
+    {
+      "date": "2028-07-01",
+      "deltaAu": 2.3749,
+      "oneWayDelayMin": 19.75,
+      "sunEarthMarsAngleDeg": 23.3
+    },
+    {
+      "date": "2028-07-02",
+      "deltaAu": 2.3732,
+      "oneWayDelayMin": 19.74,
+      "sunEarthMarsAngleDeg": 23.56
+    },
+    {
+      "date": "2028-07-03",
+      "deltaAu": 2.3715,
+      "oneWayDelayMin": 19.72,
+      "sunEarthMarsAngleDeg": 23.82
+    },
+    {
+      "date": "2028-07-04",
+      "deltaAu": 2.3698,
+      "oneWayDelayMin": 19.71,
+      "sunEarthMarsAngleDeg": 24.08
+    },
+    {
+      "date": "2028-07-05",
+      "deltaAu": 2.368,
+      "oneWayDelayMin": 19.69,
+      "sunEarthMarsAngleDeg": 24.34
+    },
+    {
+      "date": "2028-07-06",
+      "deltaAu": 2.3662,
+      "oneWayDelayMin": 19.68,
+      "sunEarthMarsAngleDeg": 24.61
+    },
+    {
+      "date": "2028-07-07",
+      "deltaAu": 2.3643,
+      "oneWayDelayMin": 19.66,
+      "sunEarthMarsAngleDeg": 24.87
+    },
+    {
+      "date": "2028-07-08",
+      "deltaAu": 2.3624,
+      "oneWayDelayMin": 19.65,
+      "sunEarthMarsAngleDeg": 25.14
+    },
+    {
+      "date": "2028-07-09",
+      "deltaAu": 2.3605,
+      "oneWayDelayMin": 19.63,
+      "sunEarthMarsAngleDeg": 25.4
+    },
+    {
+      "date": "2028-07-10",
+      "deltaAu": 2.3585,
+      "oneWayDelayMin": 19.62,
+      "sunEarthMarsAngleDeg": 25.67
+    },
+    {
+      "date": "2028-07-11",
+      "deltaAu": 2.3565,
+      "oneWayDelayMin": 19.6,
+      "sunEarthMarsAngleDeg": 25.93
+    },
+    {
+      "date": "2028-07-12",
+      "deltaAu": 2.3544,
+      "oneWayDelayMin": 19.58,
+      "sunEarthMarsAngleDeg": 26.2
+    },
+    {
+      "date": "2028-07-13",
+      "deltaAu": 2.3523,
+      "oneWayDelayMin": 19.56,
+      "sunEarthMarsAngleDeg": 26.47
+    },
+    {
+      "date": "2028-07-14",
+      "deltaAu": 2.3502,
+      "oneWayDelayMin": 19.55,
+      "sunEarthMarsAngleDeg": 26.74
+    },
+    {
+      "date": "2028-07-15",
+      "deltaAu": 2.348,
+      "oneWayDelayMin": 19.53,
+      "sunEarthMarsAngleDeg": 27.01
+    },
+    {
+      "date": "2028-07-16",
+      "deltaAu": 2.3457,
+      "oneWayDelayMin": 19.51,
+      "sunEarthMarsAngleDeg": 27.29
+    },
+    {
+      "date": "2028-07-17",
+      "deltaAu": 2.3434,
+      "oneWayDelayMin": 19.49,
+      "sunEarthMarsAngleDeg": 27.56
+    },
+    {
+      "date": "2028-07-18",
+      "deltaAu": 2.3411,
+      "oneWayDelayMin": 19.47,
+      "sunEarthMarsAngleDeg": 27.84
+    },
+    {
+      "date": "2028-07-19",
+      "deltaAu": 2.3387,
+      "oneWayDelayMin": 19.45,
+      "sunEarthMarsAngleDeg": 28.11
+    },
+    {
+      "date": "2028-07-20",
+      "deltaAu": 2.3363,
+      "oneWayDelayMin": 19.43,
+      "sunEarthMarsAngleDeg": 28.39
+    },
+    {
+      "date": "2028-07-21",
+      "deltaAu": 2.3338,
+      "oneWayDelayMin": 19.41,
+      "sunEarthMarsAngleDeg": 28.67
+    },
+    {
+      "date": "2028-07-22",
+      "deltaAu": 2.3312,
+      "oneWayDelayMin": 19.39,
+      "sunEarthMarsAngleDeg": 28.94
+    },
+    {
+      "date": "2028-07-23",
+      "deltaAu": 2.3287,
+      "oneWayDelayMin": 19.37,
+      "sunEarthMarsAngleDeg": 29.22
+    },
+    {
+      "date": "2028-07-24",
+      "deltaAu": 2.326,
+      "oneWayDelayMin": 19.34,
+      "sunEarthMarsAngleDeg": 29.51
+    },
+    {
+      "date": "2028-07-25",
+      "deltaAu": 2.3233,
+      "oneWayDelayMin": 19.32,
+      "sunEarthMarsAngleDeg": 29.79
+    },
+    {
+      "date": "2028-07-26",
+      "deltaAu": 2.3206,
+      "oneWayDelayMin": 19.3,
+      "sunEarthMarsAngleDeg": 30.07
+    },
+    {
+      "date": "2028-07-27",
+      "deltaAu": 2.3178,
+      "oneWayDelayMin": 19.28,
+      "sunEarthMarsAngleDeg": 30.36
+    },
+    {
+      "date": "2028-07-28",
+      "deltaAu": 2.315,
+      "oneWayDelayMin": 19.25,
+      "sunEarthMarsAngleDeg": 30.64
+    },
+    {
+      "date": "2028-07-29",
+      "deltaAu": 2.3121,
+      "oneWayDelayMin": 19.23,
+      "sunEarthMarsAngleDeg": 30.93
+    },
+    {
+      "date": "2028-07-30",
+      "deltaAu": 2.3092,
+      "oneWayDelayMin": 19.21,
+      "sunEarthMarsAngleDeg": 31.22
+    },
+    {
+      "date": "2028-07-31",
+      "deltaAu": 2.3062,
+      "oneWayDelayMin": 19.18,
+      "sunEarthMarsAngleDeg": 31.5
+    },
+    {
+      "date": "2028-08-01",
+      "deltaAu": 2.3032,
+      "oneWayDelayMin": 19.16,
+      "sunEarthMarsAngleDeg": 31.79
+    },
+    {
+      "date": "2028-08-02",
+      "deltaAu": 2.3001,
+      "oneWayDelayMin": 19.13,
+      "sunEarthMarsAngleDeg": 32.08
+    },
+    {
+      "date": "2028-08-03",
+      "deltaAu": 2.297,
+      "oneWayDelayMin": 19.1,
+      "sunEarthMarsAngleDeg": 32.38
+    },
+    {
+      "date": "2028-08-04",
+      "deltaAu": 2.2939,
+      "oneWayDelayMin": 19.08,
+      "sunEarthMarsAngleDeg": 32.67
+    },
+    {
+      "date": "2028-08-05",
+      "deltaAu": 2.2906,
+      "oneWayDelayMin": 19.05,
+      "sunEarthMarsAngleDeg": 32.96
+    },
+    {
+      "date": "2028-08-06",
+      "deltaAu": 2.2874,
+      "oneWayDelayMin": 19.02,
+      "sunEarthMarsAngleDeg": 33.26
+    },
+    {
+      "date": "2028-08-07",
+      "deltaAu": 2.284,
+      "oneWayDelayMin": 19,
+      "sunEarthMarsAngleDeg": 33.56
+    },
+    {
+      "date": "2028-08-08",
+      "deltaAu": 2.2807,
+      "oneWayDelayMin": 18.97,
+      "sunEarthMarsAngleDeg": 33.85
+    },
+    {
+      "date": "2028-08-09",
+      "deltaAu": 2.2773,
+      "oneWayDelayMin": 18.94,
+      "sunEarthMarsAngleDeg": 34.15
+    },
+    {
+      "date": "2028-08-10",
+      "deltaAu": 2.2738,
+      "oneWayDelayMin": 18.91,
+      "sunEarthMarsAngleDeg": 34.45
+    },
+    {
+      "date": "2028-08-11",
+      "deltaAu": 2.2703,
+      "oneWayDelayMin": 18.88,
+      "sunEarthMarsAngleDeg": 34.76
+    },
+    {
+      "date": "2028-08-12",
+      "deltaAu": 2.2667,
+      "oneWayDelayMin": 18.85,
+      "sunEarthMarsAngleDeg": 35.06
+    },
+    {
+      "date": "2028-08-13",
+      "deltaAu": 2.2631,
+      "oneWayDelayMin": 18.82,
+      "sunEarthMarsAngleDeg": 35.36
+    },
+    {
+      "date": "2028-08-14",
+      "deltaAu": 2.2594,
+      "oneWayDelayMin": 18.79,
+      "sunEarthMarsAngleDeg": 35.67
+    },
+    {
+      "date": "2028-08-15",
+      "deltaAu": 2.2556,
+      "oneWayDelayMin": 18.76,
+      "sunEarthMarsAngleDeg": 35.97
+    },
+    {
+      "date": "2028-08-16",
+      "deltaAu": 2.2518,
+      "oneWayDelayMin": 18.73,
+      "sunEarthMarsAngleDeg": 36.28
+    },
+    {
+      "date": "2028-08-17",
+      "deltaAu": 2.248,
+      "oneWayDelayMin": 18.7,
+      "sunEarthMarsAngleDeg": 36.59
+    },
+    {
+      "date": "2028-08-18",
+      "deltaAu": 2.2441,
+      "oneWayDelayMin": 18.66,
+      "sunEarthMarsAngleDeg": 36.9
+    },
+    {
+      "date": "2028-08-19",
+      "deltaAu": 2.2401,
+      "oneWayDelayMin": 18.63,
+      "sunEarthMarsAngleDeg": 37.21
+    },
+    {
+      "date": "2028-08-20",
+      "deltaAu": 2.2361,
+      "oneWayDelayMin": 18.6,
+      "sunEarthMarsAngleDeg": 37.53
+    },
+    {
+      "date": "2028-08-21",
+      "deltaAu": 2.2321,
+      "oneWayDelayMin": 18.56,
+      "sunEarthMarsAngleDeg": 37.84
+    },
+    {
+      "date": "2028-08-22",
+      "deltaAu": 2.2279,
+      "oneWayDelayMin": 18.53,
+      "sunEarthMarsAngleDeg": 38.16
+    },
+    {
+      "date": "2028-08-23",
+      "deltaAu": 2.2238,
+      "oneWayDelayMin": 18.49,
+      "sunEarthMarsAngleDeg": 38.48
+    },
+    {
+      "date": "2028-08-24",
+      "deltaAu": 2.2195,
+      "oneWayDelayMin": 18.46,
+      "sunEarthMarsAngleDeg": 38.8
+    },
+    {
+      "date": "2028-08-25",
+      "deltaAu": 2.2152,
+      "oneWayDelayMin": 18.42,
+      "sunEarthMarsAngleDeg": 39.12
+    },
+    {
+      "date": "2028-08-26",
+      "deltaAu": 2.2109,
+      "oneWayDelayMin": 18.39,
+      "sunEarthMarsAngleDeg": 39.44
+    },
+    {
+      "date": "2028-08-27",
+      "deltaAu": 2.2065,
+      "oneWayDelayMin": 18.35,
+      "sunEarthMarsAngleDeg": 39.76
+    },
+    {
+      "date": "2028-08-28",
+      "deltaAu": 2.2021,
+      "oneWayDelayMin": 18.31,
+      "sunEarthMarsAngleDeg": 40.08
+    },
+    {
+      "date": "2028-08-29",
+      "deltaAu": 2.1976,
+      "oneWayDelayMin": 18.28,
+      "sunEarthMarsAngleDeg": 40.41
+    },
+    {
+      "date": "2028-08-30",
+      "deltaAu": 2.193,
+      "oneWayDelayMin": 18.24,
+      "sunEarthMarsAngleDeg": 40.74
+    },
+    {
+      "date": "2028-08-31",
+      "deltaAu": 2.1884,
+      "oneWayDelayMin": 18.2,
+      "sunEarthMarsAngleDeg": 41.06
+    },
+    {
+      "date": "2028-09-01",
+      "deltaAu": 2.1837,
+      "oneWayDelayMin": 18.16,
+      "sunEarthMarsAngleDeg": 41.39
+    },
+    {
+      "date": "2028-09-02",
+      "deltaAu": 2.179,
+      "oneWayDelayMin": 18.12,
+      "sunEarthMarsAngleDeg": 41.72
+    },
+    {
+      "date": "2028-09-03",
+      "deltaAu": 2.1742,
+      "oneWayDelayMin": 18.08,
+      "sunEarthMarsAngleDeg": 42.06
+    },
+    {
+      "date": "2028-09-04",
+      "deltaAu": 2.1694,
+      "oneWayDelayMin": 18.04,
+      "sunEarthMarsAngleDeg": 42.39
+    },
+    {
+      "date": "2028-09-05",
+      "deltaAu": 2.1645,
+      "oneWayDelayMin": 18,
+      "sunEarthMarsAngleDeg": 42.73
+    },
+    {
+      "date": "2028-09-06",
+      "deltaAu": 2.1596,
+      "oneWayDelayMin": 17.96,
+      "sunEarthMarsAngleDeg": 43.06
+    },
+    {
+      "date": "2028-09-07",
+      "deltaAu": 2.1546,
+      "oneWayDelayMin": 17.92,
+      "sunEarthMarsAngleDeg": 43.4
+    },
+    {
+      "date": "2028-09-08",
+      "deltaAu": 2.1495,
+      "oneWayDelayMin": 17.88,
+      "sunEarthMarsAngleDeg": 43.74
+    },
+    {
+      "date": "2028-09-09",
+      "deltaAu": 2.1444,
+      "oneWayDelayMin": 17.83,
+      "sunEarthMarsAngleDeg": 44.08
+    },
+    {
+      "date": "2028-09-10",
+      "deltaAu": 2.1392,
+      "oneWayDelayMin": 17.79,
+      "sunEarthMarsAngleDeg": 44.42
+    },
+    {
+      "date": "2028-09-11",
+      "deltaAu": 2.134,
+      "oneWayDelayMin": 17.75,
+      "sunEarthMarsAngleDeg": 44.77
+    },
+    {
+      "date": "2028-09-12",
+      "deltaAu": 2.1287,
+      "oneWayDelayMin": 17.7,
+      "sunEarthMarsAngleDeg": 45.11
+    },
+    {
+      "date": "2028-09-13",
+      "deltaAu": 2.1234,
+      "oneWayDelayMin": 17.66,
+      "sunEarthMarsAngleDeg": 45.46
+    },
+    {
+      "date": "2028-09-14",
+      "deltaAu": 2.118,
+      "oneWayDelayMin": 17.61,
+      "sunEarthMarsAngleDeg": 45.81
+    },
+    {
+      "date": "2028-09-15",
+      "deltaAu": 2.1125,
+      "oneWayDelayMin": 17.57,
+      "sunEarthMarsAngleDeg": 46.16
+    },
+    {
+      "date": "2028-09-16",
+      "deltaAu": 2.107,
+      "oneWayDelayMin": 17.52,
+      "sunEarthMarsAngleDeg": 46.51
+    },
+    {
+      "date": "2028-09-17",
+      "deltaAu": 2.1014,
+      "oneWayDelayMin": 17.48,
+      "sunEarthMarsAngleDeg": 46.87
+    },
+    {
+      "date": "2028-09-18",
+      "deltaAu": 2.0958,
+      "oneWayDelayMin": 17.43,
+      "sunEarthMarsAngleDeg": 47.22
+    },
+    {
+      "date": "2028-09-19",
+      "deltaAu": 2.0901,
+      "oneWayDelayMin": 17.38,
+      "sunEarthMarsAngleDeg": 47.58
+    },
+    {
+      "date": "2028-09-20",
+      "deltaAu": 2.0844,
+      "oneWayDelayMin": 17.34,
+      "sunEarthMarsAngleDeg": 47.94
+    },
+    {
+      "date": "2028-09-21",
+      "deltaAu": 2.0786,
+      "oneWayDelayMin": 17.29,
+      "sunEarthMarsAngleDeg": 48.3
+    },
+    {
+      "date": "2028-09-22",
+      "deltaAu": 2.0727,
+      "oneWayDelayMin": 17.24,
+      "sunEarthMarsAngleDeg": 48.66
+    },
+    {
+      "date": "2028-09-23",
+      "deltaAu": 2.0668,
+      "oneWayDelayMin": 17.19,
+      "sunEarthMarsAngleDeg": 49.02
+    },
+    {
+      "date": "2028-09-24",
+      "deltaAu": 2.0608,
+      "oneWayDelayMin": 17.14,
+      "sunEarthMarsAngleDeg": 49.39
+    },
+    {
+      "date": "2028-09-25",
+      "deltaAu": 2.0548,
+      "oneWayDelayMin": 17.09,
+      "sunEarthMarsAngleDeg": 49.75
+    },
+    {
+      "date": "2028-09-26",
+      "deltaAu": 2.0487,
+      "oneWayDelayMin": 17.04,
+      "sunEarthMarsAngleDeg": 50.12
+    },
+    {
+      "date": "2028-09-27",
+      "deltaAu": 2.0426,
+      "oneWayDelayMin": 16.99,
+      "sunEarthMarsAngleDeg": 50.49
+    },
+    {
+      "date": "2028-09-28",
+      "deltaAu": 2.0364,
+      "oneWayDelayMin": 16.94,
+      "sunEarthMarsAngleDeg": 50.86
+    },
+    {
+      "date": "2028-09-29",
+      "deltaAu": 2.0301,
+      "oneWayDelayMin": 16.88,
+      "sunEarthMarsAngleDeg": 51.24
+    },
+    {
+      "date": "2028-09-30",
+      "deltaAu": 2.0238,
+      "oneWayDelayMin": 16.83,
+      "sunEarthMarsAngleDeg": 51.61
+    },
+    {
+      "date": "2028-10-01",
+      "deltaAu": 2.0175,
+      "oneWayDelayMin": 16.78,
+      "sunEarthMarsAngleDeg": 51.99
+    },
+    {
+      "date": "2028-10-02",
+      "deltaAu": 2.0111,
+      "oneWayDelayMin": 16.73,
+      "sunEarthMarsAngleDeg": 52.37
+    },
+    {
+      "date": "2028-10-03",
+      "deltaAu": 2.0046,
+      "oneWayDelayMin": 16.67,
+      "sunEarthMarsAngleDeg": 52.74
+    },
+    {
+      "date": "2028-10-04",
+      "deltaAu": 1.9981,
+      "oneWayDelayMin": 16.62,
+      "sunEarthMarsAngleDeg": 53.13
+    },
+    {
+      "date": "2028-10-05",
+      "deltaAu": 1.9915,
+      "oneWayDelayMin": 16.56,
+      "sunEarthMarsAngleDeg": 53.51
+    },
+    {
+      "date": "2028-10-06",
+      "deltaAu": 1.9849,
+      "oneWayDelayMin": 16.51,
+      "sunEarthMarsAngleDeg": 53.89
+    },
+    {
+      "date": "2028-10-07",
+      "deltaAu": 1.9782,
+      "oneWayDelayMin": 16.45,
+      "sunEarthMarsAngleDeg": 54.28
+    },
+    {
+      "date": "2028-10-08",
+      "deltaAu": 1.9714,
+      "oneWayDelayMin": 16.4,
+      "sunEarthMarsAngleDeg": 54.67
+    },
+    {
+      "date": "2028-10-09",
+      "deltaAu": 1.9646,
+      "oneWayDelayMin": 16.34,
+      "sunEarthMarsAngleDeg": 55.06
+    },
+    {
+      "date": "2028-10-10",
+      "deltaAu": 1.9578,
+      "oneWayDelayMin": 16.28,
+      "sunEarthMarsAngleDeg": 55.45
+    },
+    {
+      "date": "2028-10-11",
+      "deltaAu": 1.9509,
+      "oneWayDelayMin": 16.22,
+      "sunEarthMarsAngleDeg": 55.85
+    },
+    {
+      "date": "2028-10-12",
+      "deltaAu": 1.9439,
+      "oneWayDelayMin": 16.17,
+      "sunEarthMarsAngleDeg": 56.24
+    },
+    {
+      "date": "2028-10-13",
+      "deltaAu": 1.9369,
+      "oneWayDelayMin": 16.11,
+      "sunEarthMarsAngleDeg": 56.64
+    },
+    {
+      "date": "2028-10-14",
+      "deltaAu": 1.9298,
+      "oneWayDelayMin": 16.05,
+      "sunEarthMarsAngleDeg": 57.04
+    },
+    {
+      "date": "2028-10-15",
+      "deltaAu": 1.9227,
+      "oneWayDelayMin": 15.99,
+      "sunEarthMarsAngleDeg": 57.44
+    },
+    {
+      "date": "2028-10-16",
+      "deltaAu": 1.9155,
+      "oneWayDelayMin": 15.93,
+      "sunEarthMarsAngleDeg": 57.85
+    },
+    {
+      "date": "2028-10-17",
+      "deltaAu": 1.9082,
+      "oneWayDelayMin": 15.87,
+      "sunEarthMarsAngleDeg": 58.25
+    },
+    {
+      "date": "2028-10-18",
+      "deltaAu": 1.9009,
+      "oneWayDelayMin": 15.81,
+      "sunEarthMarsAngleDeg": 58.66
+    },
+    {
+      "date": "2028-10-19",
+      "deltaAu": 1.8936,
+      "oneWayDelayMin": 15.75,
+      "sunEarthMarsAngleDeg": 59.07
+    },
+    {
+      "date": "2028-10-20",
+      "deltaAu": 1.8862,
+      "oneWayDelayMin": 15.69,
+      "sunEarthMarsAngleDeg": 59.48
+    },
+    {
+      "date": "2028-10-21",
+      "deltaAu": 1.8787,
+      "oneWayDelayMin": 15.62,
+      "sunEarthMarsAngleDeg": 59.9
+    },
+    {
+      "date": "2028-10-22",
+      "deltaAu": 1.8712,
+      "oneWayDelayMin": 15.56,
+      "sunEarthMarsAngleDeg": 60.31
+    },
+    {
+      "date": "2028-10-23",
+      "deltaAu": 1.8636,
+      "oneWayDelayMin": 15.5,
+      "sunEarthMarsAngleDeg": 60.73
+    },
+    {
+      "date": "2028-10-24",
+      "deltaAu": 1.856,
+      "oneWayDelayMin": 15.44,
+      "sunEarthMarsAngleDeg": 61.15
+    },
+    {
+      "date": "2028-10-25",
+      "deltaAu": 1.8484,
+      "oneWayDelayMin": 15.37,
+      "sunEarthMarsAngleDeg": 61.57
+    },
+    {
+      "date": "2028-10-26",
+      "deltaAu": 1.8407,
+      "oneWayDelayMin": 15.31,
+      "sunEarthMarsAngleDeg": 62
+    },
+    {
+      "date": "2028-10-27",
+      "deltaAu": 1.8329,
+      "oneWayDelayMin": 15.24,
+      "sunEarthMarsAngleDeg": 62.42
+    },
+    {
+      "date": "2028-10-28",
+      "deltaAu": 1.8251,
+      "oneWayDelayMin": 15.18,
+      "sunEarthMarsAngleDeg": 62.85
+    },
+    {
+      "date": "2028-10-29",
+      "deltaAu": 1.8172,
+      "oneWayDelayMin": 15.11,
+      "sunEarthMarsAngleDeg": 63.28
+    },
+    {
+      "date": "2028-10-30",
+      "deltaAu": 1.8093,
+      "oneWayDelayMin": 15.05,
+      "sunEarthMarsAngleDeg": 63.71
+    },
+    {
+      "date": "2028-10-31",
+      "deltaAu": 1.8014,
+      "oneWayDelayMin": 14.98,
+      "sunEarthMarsAngleDeg": 64.15
+    },
+    {
+      "date": "2028-11-01",
+      "deltaAu": 1.7933,
+      "oneWayDelayMin": 14.91,
+      "sunEarthMarsAngleDeg": 64.58
+    },
+    {
+      "date": "2028-11-02",
+      "deltaAu": 1.7853,
+      "oneWayDelayMin": 14.85,
+      "sunEarthMarsAngleDeg": 65.02
+    },
+    {
+      "date": "2028-11-03",
+      "deltaAu": 1.7772,
+      "oneWayDelayMin": 14.78,
+      "sunEarthMarsAngleDeg": 65.46
+    },
+    {
+      "date": "2028-11-04",
+      "deltaAu": 1.769,
+      "oneWayDelayMin": 14.71,
+      "sunEarthMarsAngleDeg": 65.9
+    },
+    {
+      "date": "2028-11-05",
+      "deltaAu": 1.7608,
+      "oneWayDelayMin": 14.64,
+      "sunEarthMarsAngleDeg": 66.35
+    },
+    {
+      "date": "2028-11-06",
+      "deltaAu": 1.7526,
+      "oneWayDelayMin": 14.58,
+      "sunEarthMarsAngleDeg": 66.8
+    },
+    {
+      "date": "2028-11-07",
+      "deltaAu": 1.7443,
+      "oneWayDelayMin": 14.51,
+      "sunEarthMarsAngleDeg": 67.25
+    },
+    {
+      "date": "2028-11-08",
+      "deltaAu": 1.736,
+      "oneWayDelayMin": 14.44,
+      "sunEarthMarsAngleDeg": 67.7
+    },
+    {
+      "date": "2028-11-09",
+      "deltaAu": 1.7276,
+      "oneWayDelayMin": 14.37,
+      "sunEarthMarsAngleDeg": 68.15
+    },
+    {
+      "date": "2028-11-10",
+      "deltaAu": 1.7192,
+      "oneWayDelayMin": 14.3,
+      "sunEarthMarsAngleDeg": 68.61
+    },
+    {
+      "date": "2028-11-11",
+      "deltaAu": 1.7107,
+      "oneWayDelayMin": 14.23,
+      "sunEarthMarsAngleDeg": 69.07
+    },
+    {
+      "date": "2028-11-12",
+      "deltaAu": 1.7022,
+      "oneWayDelayMin": 14.16,
+      "sunEarthMarsAngleDeg": 69.53
+    },
+    {
+      "date": "2028-11-13",
+      "deltaAu": 1.6936,
+      "oneWayDelayMin": 14.09,
+      "sunEarthMarsAngleDeg": 70
+    },
+    {
+      "date": "2028-11-14",
+      "deltaAu": 1.685,
+      "oneWayDelayMin": 14.01,
+      "sunEarthMarsAngleDeg": 70.46
+    },
+    {
+      "date": "2028-11-15",
+      "deltaAu": 1.6763,
+      "oneWayDelayMin": 13.94,
+      "sunEarthMarsAngleDeg": 70.93
+    },
+    {
+      "date": "2028-11-16",
+      "deltaAu": 1.6676,
+      "oneWayDelayMin": 13.87,
+      "sunEarthMarsAngleDeg": 71.4
+    },
+    {
+      "date": "2028-11-17",
+      "deltaAu": 1.6589,
+      "oneWayDelayMin": 13.8,
+      "sunEarthMarsAngleDeg": 71.88
+    },
+    {
+      "date": "2028-11-18",
+      "deltaAu": 1.6501,
+      "oneWayDelayMin": 13.72,
+      "sunEarthMarsAngleDeg": 72.36
+    },
+    {
+      "date": "2028-11-19",
+      "deltaAu": 1.6413,
+      "oneWayDelayMin": 13.65,
+      "sunEarthMarsAngleDeg": 72.84
+    },
+    {
+      "date": "2028-11-20",
+      "deltaAu": 1.6325,
+      "oneWayDelayMin": 13.58,
+      "sunEarthMarsAngleDeg": 73.32
+    },
+    {
+      "date": "2028-11-21",
+      "deltaAu": 1.6236,
+      "oneWayDelayMin": 13.5,
+      "sunEarthMarsAngleDeg": 73.81
+    },
+    {
+      "date": "2028-11-22",
+      "deltaAu": 1.6146,
+      "oneWayDelayMin": 13.43,
+      "sunEarthMarsAngleDeg": 74.29
+    },
+    {
+      "date": "2028-11-23",
+      "deltaAu": 1.6056,
+      "oneWayDelayMin": 13.35,
+      "sunEarthMarsAngleDeg": 74.78
+    },
+    {
+      "date": "2028-11-24",
+      "deltaAu": 1.5966,
+      "oneWayDelayMin": 13.28,
+      "sunEarthMarsAngleDeg": 75.28
+    },
+    {
+      "date": "2028-11-25",
+      "deltaAu": 1.5876,
+      "oneWayDelayMin": 13.2,
+      "sunEarthMarsAngleDeg": 75.77
+    },
+    {
+      "date": "2028-11-26",
+      "deltaAu": 1.5785,
+      "oneWayDelayMin": 13.13,
+      "sunEarthMarsAngleDeg": 76.27
+    },
+    {
+      "date": "2028-11-27",
+      "deltaAu": 1.5694,
+      "oneWayDelayMin": 13.05,
+      "sunEarthMarsAngleDeg": 76.77
+    },
+    {
+      "date": "2028-11-28",
+      "deltaAu": 1.5603,
+      "oneWayDelayMin": 12.98,
+      "sunEarthMarsAngleDeg": 77.28
+    },
+    {
+      "date": "2028-11-29",
+      "deltaAu": 1.5511,
+      "oneWayDelayMin": 12.9,
+      "sunEarthMarsAngleDeg": 77.79
+    },
+    {
+      "date": "2028-11-30",
+      "deltaAu": 1.5419,
+      "oneWayDelayMin": 12.82,
+      "sunEarthMarsAngleDeg": 78.3
+    },
+    {
+      "date": "2028-12-01",
+      "deltaAu": 1.5327,
+      "oneWayDelayMin": 12.75,
+      "sunEarthMarsAngleDeg": 78.81
+    },
+    {
+      "date": "2028-12-02",
+      "deltaAu": 1.5234,
+      "oneWayDelayMin": 12.67,
+      "sunEarthMarsAngleDeg": 79.33
+    },
+    {
+      "date": "2028-12-03",
+      "deltaAu": 1.5141,
+      "oneWayDelayMin": 12.59,
+      "sunEarthMarsAngleDeg": 79.85
+    },
+    {
+      "date": "2028-12-04",
+      "deltaAu": 1.5048,
+      "oneWayDelayMin": 12.51,
+      "sunEarthMarsAngleDeg": 80.37
+    },
+    {
+      "date": "2028-12-05",
+      "deltaAu": 1.4954,
+      "oneWayDelayMin": 12.44,
+      "sunEarthMarsAngleDeg": 80.9
+    },
+    {
+      "date": "2028-12-06",
+      "deltaAu": 1.486,
+      "oneWayDelayMin": 12.36,
+      "sunEarthMarsAngleDeg": 81.43
+    },
+    {
+      "date": "2028-12-07",
+      "deltaAu": 1.4766,
+      "oneWayDelayMin": 12.28,
+      "sunEarthMarsAngleDeg": 81.96
+    },
+    {
+      "date": "2028-12-08",
+      "deltaAu": 1.4672,
+      "oneWayDelayMin": 12.2,
+      "sunEarthMarsAngleDeg": 82.49
+    },
+    {
+      "date": "2028-12-09",
+      "deltaAu": 1.4577,
+      "oneWayDelayMin": 12.12,
+      "sunEarthMarsAngleDeg": 83.03
+    },
+    {
+      "date": "2028-12-10",
+      "deltaAu": 1.4482,
+      "oneWayDelayMin": 12.04,
+      "sunEarthMarsAngleDeg": 83.58
+    },
+    {
+      "date": "2028-12-11",
+      "deltaAu": 1.4387,
+      "oneWayDelayMin": 11.97,
+      "sunEarthMarsAngleDeg": 84.12
+    },
+    {
+      "date": "2028-12-12",
+      "deltaAu": 1.4291,
+      "oneWayDelayMin": 11.89,
+      "sunEarthMarsAngleDeg": 84.67
+    },
+    {
+      "date": "2028-12-13",
+      "deltaAu": 1.4196,
+      "oneWayDelayMin": 11.81,
+      "sunEarthMarsAngleDeg": 85.23
+    },
+    {
+      "date": "2028-12-14",
+      "deltaAu": 1.41,
+      "oneWayDelayMin": 11.73,
+      "sunEarthMarsAngleDeg": 85.79
+    },
+    {
+      "date": "2028-12-15",
+      "deltaAu": 1.4004,
+      "oneWayDelayMin": 11.65,
+      "sunEarthMarsAngleDeg": 86.35
+    },
+    {
+      "date": "2028-12-16",
+      "deltaAu": 1.3908,
+      "oneWayDelayMin": 11.57,
+      "sunEarthMarsAngleDeg": 86.91
+    },
+    {
+      "date": "2028-12-17",
+      "deltaAu": 1.3811,
+      "oneWayDelayMin": 11.49,
+      "sunEarthMarsAngleDeg": 87.48
+    },
+    {
+      "date": "2028-12-18",
+      "deltaAu": 1.3715,
+      "oneWayDelayMin": 11.41,
+      "sunEarthMarsAngleDeg": 88.06
+    },
+    {
+      "date": "2028-12-19",
+      "deltaAu": 1.3618,
+      "oneWayDelayMin": 11.33,
+      "sunEarthMarsAngleDeg": 88.64
+    },
+    {
+      "date": "2028-12-20",
+      "deltaAu": 1.3521,
+      "oneWayDelayMin": 11.25,
+      "sunEarthMarsAngleDeg": 89.22
+    },
+    {
+      "date": "2028-12-21",
+      "deltaAu": 1.3424,
+      "oneWayDelayMin": 11.16,
+      "sunEarthMarsAngleDeg": 89.8
+    },
+    {
+      "date": "2028-12-22",
+      "deltaAu": 1.3327,
+      "oneWayDelayMin": 11.08,
+      "sunEarthMarsAngleDeg": 90.39
+    },
+    {
+      "date": "2028-12-23",
+      "deltaAu": 1.323,
+      "oneWayDelayMin": 11,
+      "sunEarthMarsAngleDeg": 90.99
+    },
+    {
+      "date": "2028-12-24",
+      "deltaAu": 1.3132,
+      "oneWayDelayMin": 10.92,
+      "sunEarthMarsAngleDeg": 91.59
+    },
+    {
+      "date": "2028-12-25",
+      "deltaAu": 1.3035,
+      "oneWayDelayMin": 10.84,
+      "sunEarthMarsAngleDeg": 92.19
+    },
+    {
+      "date": "2028-12-26",
+      "deltaAu": 1.2938,
+      "oneWayDelayMin": 10.76,
+      "sunEarthMarsAngleDeg": 92.8
+    },
+    {
+      "date": "2028-12-27",
+      "deltaAu": 1.284,
+      "oneWayDelayMin": 10.68,
+      "sunEarthMarsAngleDeg": 93.41
+    },
+    {
+      "date": "2028-12-28",
+      "deltaAu": 1.2743,
+      "oneWayDelayMin": 10.6,
+      "sunEarthMarsAngleDeg": 94.03
+    },
+    {
+      "date": "2028-12-29",
+      "deltaAu": 1.2645,
+      "oneWayDelayMin": 10.52,
+      "sunEarthMarsAngleDeg": 94.65
+    },
+    {
+      "date": "2028-12-30",
+      "deltaAu": 1.2548,
+      "oneWayDelayMin": 10.44,
+      "sunEarthMarsAngleDeg": 95.28
+    },
+    {
+      "date": "2028-12-31",
+      "deltaAu": 1.245,
+      "oneWayDelayMin": 10.35,
+      "sunEarthMarsAngleDeg": 95.91
+    },
+    {
+      "date": "2029-01-01",
+      "deltaAu": 1.2353,
+      "oneWayDelayMin": 10.27,
+      "sunEarthMarsAngleDeg": 96.54
+    },
+    {
+      "date": "2029-01-02",
+      "deltaAu": 1.2255,
+      "oneWayDelayMin": 10.19,
+      "sunEarthMarsAngleDeg": 97.19
+    },
+    {
+      "date": "2029-01-03",
+      "deltaAu": 1.2158,
+      "oneWayDelayMin": 10.11,
+      "sunEarthMarsAngleDeg": 97.83
+    },
+    {
+      "date": "2029-01-04",
+      "deltaAu": 1.2061,
+      "oneWayDelayMin": 10.03,
+      "sunEarthMarsAngleDeg": 98.49
+    },
+    {
+      "date": "2029-01-05",
+      "deltaAu": 1.1963,
+      "oneWayDelayMin": 9.95,
+      "sunEarthMarsAngleDeg": 99.14
+    },
+    {
+      "date": "2029-01-06",
+      "deltaAu": 1.1866,
+      "oneWayDelayMin": 9.87,
+      "sunEarthMarsAngleDeg": 99.81
+    },
+    {
+      "date": "2029-01-07",
+      "deltaAu": 1.1769,
+      "oneWayDelayMin": 9.79,
+      "sunEarthMarsAngleDeg": 100.48
+    },
+    {
+      "date": "2029-01-08",
+      "deltaAu": 1.1672,
+      "oneWayDelayMin": 9.71,
+      "sunEarthMarsAngleDeg": 101.15
+    },
+    {
+      "date": "2029-01-09",
+      "deltaAu": 1.1575,
+      "oneWayDelayMin": 9.63,
+      "sunEarthMarsAngleDeg": 101.83
+    },
+    {
+      "date": "2029-01-10",
+      "deltaAu": 1.1478,
+      "oneWayDelayMin": 9.55,
+      "sunEarthMarsAngleDeg": 102.52
+    },
+    {
+      "date": "2029-01-11",
+      "deltaAu": 1.1381,
+      "oneWayDelayMin": 9.47,
+      "sunEarthMarsAngleDeg": 103.21
+    },
+    {
+      "date": "2029-01-12",
+      "deltaAu": 1.1285,
+      "oneWayDelayMin": 9.39,
+      "sunEarthMarsAngleDeg": 103.91
+    },
+    {
+      "date": "2029-01-13",
+      "deltaAu": 1.1188,
+      "oneWayDelayMin": 9.31,
+      "sunEarthMarsAngleDeg": 104.62
+    },
+    {
+      "date": "2029-01-14",
+      "deltaAu": 1.1092,
+      "oneWayDelayMin": 9.23,
+      "sunEarthMarsAngleDeg": 105.34
+    },
+    {
+      "date": "2029-01-15",
+      "deltaAu": 1.0996,
+      "oneWayDelayMin": 9.15,
+      "sunEarthMarsAngleDeg": 106.06
+    }
+  ]
+}

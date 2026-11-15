@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fira Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Overpass", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  --color-space-bg: #0B1020;
+  --color-space-surface: #141B33;
+  --color-space-surface-elevated: #1A2340;
+  --color-space-border: #253054;
+  --color-space-text: #E6EDF7;
+  --color-space-muted: #A9B4CC;
+  --color-calm: #5EEAD4;
+  --color-voice: #A78BFA;
+  --color-status-green: #34D399;
+  --color-status-yellow: #FBBF24;
+  --color-status-red: #F87171;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #0B1020;
+    color: #E6EDF7;
+    color-scheme: dark;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid #5EEAD4;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom precision range input styling */
+input[type="range"].telemetry-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #222D4F;
+  cursor: pointer;
+}
+
+input[type="range"].telemetry-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #5EEAD4;
+  border: 2px solid #0B1020;
+  box-shadow: 0 0 0 1px rgba(94, 234, 212, 0.45);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+input[type="range"].telemetry-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+input[type="range"].telemetry-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #5EEAD4;
+  border: 2px solid #0B1020;
+  box-shadow: 0 0 0 1px rgba(94, 234, 212, 0.45);
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1), background-color 150ms ease;
+}
+
+input[type="range"].telemetry-slider:focus-visible {
+  outline: 2px solid #5EEAD4;
+  outline-offset: 6px;
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
