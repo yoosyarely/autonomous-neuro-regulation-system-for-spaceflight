@@ -21,8 +21,12 @@ import { StatusHeroCard } from './components/StatusHeroCard';
 import { CountermeasuresPanel } from './components/CountermeasuresPanel';
 import { EscalationPanel } from './components/EscalationPanel';
 import { CrewSignalsPanel } from './components/CrewSignalsPanel';
+import { DeviceRoadmapView } from './components/DeviceRoadmapView';
+
+type ActiveTab = 'console' | 'roadmap';
 
 export default function App() {
+  const [activeTab, setActiveTab] = useState<ActiveTab>('console');
   const [simState, setSimState] = useState<SimulationState>(() =>
     createScenarioState('normal', 'Mars'),
   );
@@ -158,7 +162,45 @@ export default function App() {
           id="main-console"
           className="mx-auto w-full max-w-[1440px] flex-1 space-y-5 px-4 py-6 sm:px-6 lg:px-8"
         >
-          {/* Band 1: Asymmetric 3-Column Operational Console (Status Card Center, Largest) */}
+          {/* View Tabs: Operational Console | Device Roadmap */}
+          <div
+            role="tablist"
+            aria-label="Application views"
+            className="inline-flex items-center rounded-lg border border-[#253054] bg-[#0E1428] p-1"
+          >
+            <button
+              type="button"
+              role="tab"
+              aria-selected={activeTab === 'console'}
+              onClick={() => setActiveTab('console')}
+              className={`min-h-[38px] rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
+                activeTab === 'console'
+                  ? 'bg-[#5EEAD4] text-[#0B1020]'
+                  : 'text-[#A9B4CC] hover:text-[#E6EDF7]'
+              }`}
+            >
+              Operational console
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={activeTab === 'roadmap'}
+              onClick={() => setActiveTab('roadmap')}
+              className={`min-h-[38px] rounded-md px-4 py-1.5 text-sm font-medium transition-colors ${
+                activeTab === 'roadmap'
+                  ? 'bg-[#5EEAD4] text-[#0B1020]'
+                  : 'text-[#A9B4CC] hover:text-[#E6EDF7]'
+              }`}
+            >
+              Device roadmap
+            </button>
+          </div>
+
+          {activeTab === 'roadmap' ? (
+            <DeviceRoadmapView />
+          ) : (
+            <>
+              {/* Band 1: Asymmetric 3-Column Operational Console (Status Card Center, Largest) */}
           <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 lg:items-start">
             {/* Left Column: Earth Link & Private Voice Log */}
             <div className="order-2 flex flex-col gap-5 lg:order-1 lg:col-span-3">
@@ -214,6 +256,8 @@ export default function App() {
             onChangeSignal={handleChangeSignal}
             onToggleFunctionalLoss={handleToggleFunctionalLoss}
           />
+            </>
+          )}
         </main>
 
         <footer className="border-t border-[#253054] bg-[#0E1428] py-4">

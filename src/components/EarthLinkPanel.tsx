@@ -69,11 +69,20 @@ export function EarthLinkPanel({
             <span className="text-xs font-medium text-[#A9B4CC]">· NASA data</span>
           </div>
           {data && (
-            <p className="mt-1 font-mono text-xs text-[#A9B4CC]">
-              {data.ephemerisDate
-                ? `Ephemeris date: ${data.ephemerisDate}`
-                : `Data date: ${formatUtcDate(data.fetchedAt)}`}
-            </p>
+            <div className="mt-1 space-y-0.5">
+              <p className="font-mono text-xs text-[#A9B4CC]">
+                Ephemeris date (UTC): {data.ephemerisDate}
+              </p>
+              <span
+                className={`inline-flex items-center rounded border px-2 py-0.5 font-mono text-[11px] font-medium ${
+                  data.ephemerisOrigin === 'live'
+                    ? 'border-[#34D399]/50 bg-[#34D399]/10 text-[#34D399]'
+                    : 'border-[#253054] bg-[#0B1020]/80 text-[#A9B4CC]'
+                }`}
+              >
+                {data.ephemerisLabel}
+              </span>
+            </div>
           )}
         </div>
 
@@ -219,14 +228,26 @@ export function EarthLinkPanel({
           )}
 
           {/* Solar Activity (both Mars and Moon) */}
-          <div className="flex items-center justify-between rounded-lg border border-[#253054] bg-[#0B1020]/60 px-3.5 py-2.5">
-            <div className="flex items-center gap-2 text-sm text-[#A9B4CC]">
-              <Sun className="h-4 w-4 shrink-0 text-[#FBBF24]" aria-hidden="true" />
-              <span>Recent solar activity (30d)</span>
+          <div className="rounded-lg border border-[#253054] bg-[#0B1020]/60 px-3.5 py-2.5">
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2 text-sm text-[#A9B4CC]">
+                <Sun className="h-4 w-4 shrink-0 text-[#FBBF24]" aria-hidden="true" />
+                <span>Recent solar activity (30d)</span>
+              </div>
+              <span className="font-mono text-sm font-semibold tabular-nums text-[#E6EDF7]">
+                {data.solarEvents30d === null ? 'data unavailable' : `${data.solarEvents30d} events`}
+              </span>
             </div>
-            <span className="font-mono text-sm font-semibold tabular-nums text-[#E6EDF7]">
-              {data.solarEvents30d === null ? 'data unavailable' : `${data.solarEvents30d} events`}
-            </span>
+            <div className="mt-1.5 flex items-center justify-between text-[11px]">
+              <span className="text-[#A9B4CC]">DONKI feed</span>
+              <span
+                className={`font-mono font-medium ${
+                  data.solarOrigin === 'live' ? 'text-[#34D399]' : 'text-[#A9B4CC]'
+                }`}
+              >
+                {data.solarLabel}
+              </span>
+            </div>
           </div>
 
           <p className="text-xs text-[#A9B4CC]">Source: {data.source}</p>

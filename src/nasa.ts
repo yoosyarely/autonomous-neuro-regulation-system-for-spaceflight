@@ -17,12 +17,18 @@ export interface NasaSnapshot {
   ephemeris?: EphemerisEntry[];
 }
 
+export type DataOriginKind = 'live' | 'snapshot';
+
 export interface EarthLinkData {
   oneWayDelayMin: number;
   sunEarthMarsAngleDeg: number;
   solarEvents30d: number | null;
   fetchedAt: string;
-  ephemerisDate?: string;
+  ephemerisDate: string;
+  ephemerisOrigin: DataOriginKind;
+  ephemerisLabel: string;
+  solarOrigin: DataOriginKind;
+  solarLabel: string;
   source: string;
   placeholder?: boolean;
 }
@@ -35,8 +41,9 @@ export interface LinkStatusInfo {
 }
 
 const SNAPSHOT_STORAGE_KEY = 'anrs_nasa_snapshot_v1';
-const DONKI_STORAGE_KEY = 'anrs_nasa_donki_live_v1';
+const DONKI_STORAGE_KEY = 'anrs_nasa_donki_live_v2';
 const LIVE_TIMEOUT_MS = 5000;
+const BASELINE_MISSION_DAY = 142;
 
 let memorySnapshot: NasaSnapshot | null = null;
 let memoryDonkiLive: { count: number; fetchedAt: string } | null | undefined = undefined;
@@ -64,6 +71,12 @@ export function getLinkStatus(angleDeg: number): LinkStatusInfo {
     label: 'Nominal link',
     category: 'nominal',
   };
+}
+
+function getTargetUtcDate(missionDay: number, now: Date = new Date()): string {
+  const dayOffset = missionDay - BASELINE_MISSION_DAY;
+  const utcMidnight = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + dayOffset);
+  return new Date(utcMidnight).toISOString().slice(0, 10);
 }
 
 function readSessionJson<T>(key: string): T | null {
@@ -111,8 +124,8 @@ async function loadSnapshot(): Promise<NasaSnapshot> {
 }
 
 /**
- * Attempts live NASA DONKI (SEP + GST, which support CORS) with a 5s timeout.
- * JPL Horizons does not send Access-Control-Allow-Origin, so ephemeris always uses the snapshot.
+ * Attempts live NASA DONKI (SEP + GST, which allow CORS) with a 5s timeout.
+ * JPL Horizons does not send Access-Control-Allow-Origin, so ephemeris uses the offline snapshot.
  */
 async function tryLiveDonkiCount(): Promise<{ count: number; fetchedAt: string } | null> {
   if (memoryDonkiLive !== undefined) return memoryDonkiLive;
@@ -173,28 +186,34 @@ async function tryLiveDonkiCount(): Promise<{ count: number; fetchedAt: string }
 }
 
 /**
- * Fetches Earth-spacecraft link telemetry for the given mission day.
- * Uses the JPL Horizons ephemeris snapshot (CORS-blocked in browsers) and attempts live DONKI
- * space-weather counts with a 5-second timeout, falling back cleanly to the snapshot.
+ * Fetches Earth-spacecraft link telemetry for the current UTC date (+ mission day advance).
+ * - Ephemeris (JPL Horizons): served from offline backup snapshot because ssd.jpl.nasa.gov blocks browser CORS.
+ * - Space weather (NASA DONKI SEP + GST): attempted live with 5s timeout, falling back to offline backup snapshot.
  */
 export async function getEarthLink(missionDay: number): Promise<EarthLinkData> {
   const snapshot = await loadSnapshot();
   const liveDonki = await tryLiveDonkiCount();
 
+  const targetDate = getTargetUtcDate(missionDay);
   const ephemeris = Array.isArray(snapshot.ephemeris) ? snapshot.ephemeris : [];
-  const dayIndex = ephemeris.length > 0 ? (Math.max(1, missionDay) - 1) % ephemeris.length : -1;
-  const entry = dayIndex >= 0 ? ephemeris[dayIndex] : null;
+  let entry = ephemeris.find((row) => row.date === targetDate) ?? null;
+
+  if (!entry && ephemeris.length > 0) {
+    const offset = Math.max(0, missionDay - BASELINE_MISSION_DAY);
+    entry = ephemeris[offset % ephemeris.length];
+  }
 
   const snapshotDate =
     typeof snapshot.fetchedAt === 'string' && snapshot.fetchedAt.length >= 10
       ? snapshot.fetchedAt.slice(0, 10)
       : 'unknown date';
 
-  const source = liveDonki
-    ? `NASA data snapshot, ${snapshotDate} · Live NASA DONKI`
-    : typeof snapshot.source === 'string' && snapshot.source.length > 0
-      ? snapshot.source
-      : `NASA data snapshot, ${snapshotDate}`;
+  const ephemerisLabel = `Snapshot (offline backup), ${snapshotDate}`;
+  const solarOrigin: DataOriginKind = liveDonki ? 'live' : 'snapshot';
+  const solarDate = liveDonki ? liveDonki.fetchedAt.slice(0, 10) : snapshotDate;
+  const solarLabel = liveDonki
+    ? `Live NASA data (${solarDate})`
+    : `Snapshot (offline backup), ${solarDate}`;
 
   return {
     oneWayDelayMin: entry
@@ -213,8 +232,14 @@ export async function getEarthLink(missionDay: number): Promise<EarthLinkData> {
         ? snapshot.solarEvents30d
         : null,
     fetchedAt: typeof snapshot.fetchedAt === 'string' ? snapshot.fetchedAt : 'Unavailable',
-    ephemerisDate: entry?.date,
-    source,
+    ephemerisDate: entry?.date ?? targetDate,
+    ephemerisOrigin: 'snapshot',
+    ephemerisLabel,
+    solarOrigin,
+    solarLabel,
+    source: liveDonki
+      ? `JPL Horizons: ${ephemerisLabel} · DONKI: ${solarLabel}`
+      : ephemerisLabel,
     placeholder: Boolean(snapshot.placeholder),
   };
 }

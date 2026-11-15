@@ -1,12 +1,11 @@
+// AI-assisted code. See README: AI use disclosure.
 import { useEffect, useState } from 'react';
 import { useReducedMotion } from 'motion/react';
 import {
   Wind,
   Zap,
   Play,
-  Pause,
   Square,
-  CheckCircle2,
   CircleDashed,
   Activity,
   ShieldOff,
@@ -74,9 +73,9 @@ function getSynchronizedCycleState(totalSessionSec: number): {
     breathScale = 1.0 - 0.32 * eased;
   }
 
-  // Deep pressure synced with breathing:
-  // Gentle pressure on exhale (Inflating 0->100% over 4s, Holding 100% for 2s),
-  // Release on inhale (Releasing 100->0% over 4s, resting at 0% during breath hold).
+  // Deep pressure synced to the same clock as breathing:
+  // Rises during Exhale (Inflating 0->100% over 4s, Holding 100% for 2s),
+  // Releases during Inhale (Releasing 100->0% over 4s, resting at 0% during Hold).
   let pressurePct = 0;
   let pressureState: DeepPressureState = 'Releasing';
 
@@ -86,21 +85,19 @@ function getSynchronizedCycleState(totalSessionSec: number): {
       pressurePct = 0;
     } else {
       const p = t / INHALE_SEC;
-      const releaseEase = 0.5 * (1 + Math.cos(Math.PI * p)); // 1 -> 0 smoothly
+      const releaseEase = 0.5 * (1 + Math.cos(Math.PI * p));
       pressurePct = 100 * releaseEase;
     }
   } else if (t < INHALE_SEC + HOLD_SEC) {
     pressureState = 'Releasing';
     pressurePct = 0;
   } else if (t < INHALE_SEC + HOLD_SEC + 4) {
-    // First 4s of 6s exhale: smooth inflation 0% -> 100%
     const localT = t - (INHALE_SEC + HOLD_SEC);
     const p = localT / 4;
     const inflateEase = 0.5 - 0.5 * Math.cos(Math.PI * p);
     pressureState = 'Inflating';
     pressurePct = 100 * inflateEase;
   } else {
-    // Final 2s of exhale: gentle hold at 100% of set level
     pressureState = 'Holding';
     pressurePct = 100;
   }
@@ -123,32 +120,25 @@ export function CountermeasuresPanel({
   onActiveStateChange,
 }: CountermeasuresPanelProps) {
   const prefersReducedMotion = useReducedMotion();
-  const [manualBreathOverride, setManualBreathOverride] = useState<boolean | null>(null);
-  const [deepPressureStopped, setDeepPressureStopped] = useState<boolean>(false);
-  const [deepPressureManualStart, setDeepPressureManualStart] = useState<boolean>(false);
+  const [manualSessionOverride, setManualSessionOverride] = useState<boolean | null>(null);
   const [sessionSec, setSessionSec] = useState<number>(0);
 
-  const isGuideRunning =
-    manualBreathOverride !== null ? manualBreathOverride : countermeasuresActive;
-  const isDeepPressureRunning =
-    !deepPressureStopped && (countermeasuresActive || deepPressureManualStart);
-  const anyCountermeasureRunning = isGuideRunning || isDeepPressureRunning || countermeasuresActive;
+  const isSessionRunning =
+    manualSessionOverride !== null ? manualSessionOverride : countermeasuresActive;
 
   useEffect(() => {
-    setManualBreathOverride(null);
-    if (countermeasuresActive) {
-      setDeepPressureStopped(false);
-    } else {
-      setDeepPressureManualStart(false);
+    setManualSessionOverride(null);
+    if (!countermeasuresActive) {
+      setSessionSec(0);
     }
   }, [countermeasuresActive]);
 
   useEffect(() => {
-    onActiveStateChange?.(anyCountermeasureRunning);
-  }, [anyCountermeasureRunning, onActiveStateChange]);
+    onActiveStateChange?.(isSessionRunning);
+  }, [isSessionRunning, onActiveStateChange]);
 
   useEffect(() => {
-    if (!isGuideRunning && !isDeepPressureRunning) return;
+    if (!isSessionRunning) return;
     let frameId = 0;
     let lastTime = performance.now();
 
@@ -161,11 +151,11 @@ export function CountermeasuresPanel({
 
     frameId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frameId);
-  }, [isGuideRunning, isDeepPressureRunning]);
+  }, [isSessionRunning]);
 
   const cycle = getSynchronizedCycleState(sessionSec);
-  const activePressurePct = isDeepPressureRunning ? cycle.pressurePct : 0;
-  const activePressureState: DeepPressureState = isDeepPressureRunning
+  const activePressurePct = isSessionRunning ? cycle.pressurePct : 0;
+  const activePressureState: DeepPressureState = isSessionRunning
     ? cycle.pressureState
     : 'Releasing';
 
@@ -173,14 +163,13 @@ export function CountermeasuresPanel({
   const ringCirc = 2 * Math.PI * ringRadius;
   const vestScale = prefersReducedMotion ? 1 : 1 + 0.085 * (activePressurePct / 100);
 
-  const handleStopDeepPressure = () => {
-    setDeepPressureStopped(true);
-    setDeepPressureManualStart(false);
+  const handleStartSession = () => {
+    setManualSessionOverride(true);
   };
 
-  const handleStartDeepPressure = () => {
-    setDeepPressureStopped(false);
-    setDeepPressureManualStart(true);
+  const handleStopSession = () => {
+    setManualSessionOverride(false);
+    setSessionSec(0);
   };
 
   return (
@@ -188,8 +177,8 @@ export function CountermeasuresPanel({
       aria-labelledby="countermeasures-heading"
       className="flex flex-col gap-4 rounded-xl border border-[#253054] bg-[#141B33] p-5 sm:p-6"
     >
-      {/* Header */}
-      <div className="flex items-start justify-between gap-3">
+      {/* Header with single synchronized Start session / Stop controls */}
+      <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <h2
             id="countermeasures-heading"
@@ -198,26 +187,40 @@ export function CountermeasuresPanel({
             Countermeasures
           </h2>
           <p className="mt-0.5 text-xs text-[#A9B4CC]">
-            Autonomous pacing · Private on device
+            Synchronized session · Private on device
           </p>
         </div>
-        <button
-          type="button"
-          onClick={() => setManualBreathOverride(!isGuideRunning)}
-          className="inline-flex min-h-[38px] items-center gap-1.5 rounded-lg bg-[#5EEAD4] px-3 py-1.5 text-xs font-semibold text-[#0B1020] whitespace-nowrap transition-opacity hover:opacity-90"
-        >
-          {isGuideRunning ? (
-            <>
-              <Pause className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-              <span>Pause guide</span>
-            </>
-          ) : (
-            <>
-              <Play className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-              <span>Start guide</span>
-            </>
-          )}
-        </button>
+
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={handleStartSession}
+            disabled={isSessionRunning}
+            className={`inline-flex min-h-[38px] items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold whitespace-nowrap transition-opacity ${
+              isSessionRunning
+                ? 'cursor-default border border-[#5EEAD4]/40 bg-[#5EEAD4]/15 text-[#5EEAD4]'
+                : 'bg-[#5EEAD4] text-[#0B1020] hover:opacity-90'
+            }`}
+          >
+            <Play className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+            <span>Start session</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={handleStopSession}
+            disabled={!isSessionRunning}
+            aria-label="Stop countermeasure session"
+            className={`inline-flex min-h-[38px] items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-semibold whitespace-nowrap transition-colors ${
+              isSessionRunning
+                ? 'border-[#F87171]/70 bg-[#F87171] text-[#0B1020] hover:opacity-90'
+                : 'border-[#253054] bg-[#0B1020] text-[#A9B4CC] opacity-60'
+            }`}
+          >
+            <Square className="h-3 w-3 shrink-0 fill-current" aria-hidden="true" />
+            <span>Stop</span>
+          </button>
+        </div>
       </div>
 
       {/* Haptic Breathing Guide */}
@@ -250,7 +253,7 @@ export function CountermeasuresPanel({
               strokeWidth="4"
               strokeLinecap="round"
               strokeDasharray={ringCirc}
-              strokeDashoffset={ringCirc * (1 - (isGuideRunning ? cycle.cycleProgress : 0))}
+              strokeDashoffset={ringCirc * (1 - (isSessionRunning ? cycle.cycleProgress : 0))}
             />
           </svg>
 
@@ -260,16 +263,16 @@ export function CountermeasuresPanel({
               prefersReducedMotion
                 ? undefined
                 : {
-                    transform: `scale(${isGuideRunning ? cycle.breathScale.toFixed(4) : 0.78})`,
+                    transform: `scale(${isSessionRunning ? cycle.breathScale.toFixed(4) : 0.78})`,
                     willChange: 'transform',
                   }
             }
           >
             <span className="font-display text-sm font-bold text-[#E6EDF7]">
-              {isGuideRunning ? cycle.phase : 'Standby'}
+              {isSessionRunning ? cycle.phase : 'Standby'}
             </span>
             <span className="mt-0.5 font-mono text-xs tabular-nums text-[#5EEAD4]">
-              {isGuideRunning ? `${cycle.phaseRemainingSec.toFixed(1)} s` : 'Ready'}
+              {isSessionRunning ? `${cycle.phaseRemainingSec.toFixed(1)} s` : 'Ready'}
             </span>
           </div>
         </div>
@@ -281,12 +284,12 @@ export function CountermeasuresPanel({
             aria-label="Breathing phase progress"
             aria-valuemin={0}
             aria-valuemax={100}
-            aria-valuenow={isGuideRunning ? Math.round(cycle.phaseProgress * 100) : 0}
+            aria-valuenow={isSessionRunning ? Math.round(cycle.phaseProgress * 100) : 0}
           >
             <div
               className="h-full bg-[#5EEAD4]"
               style={{
-                width: isGuideRunning ? `${Math.round(cycle.phaseProgress * 100)}%` : '0%',
+                width: isSessionRunning ? `${Math.round(cycle.phaseProgress * 100)}%` : '0%',
               }}
             />
           </div>
@@ -300,42 +303,15 @@ export function CountermeasuresPanel({
         </div>
       </div>
 
-      {/* Deep Pressure (concept) Visual Simulation */}
+      {/* Deep Pressure (concept) Visual Simulation — synced to breathing clock */}
       <div className="rounded-xl border border-[#253054] bg-[#0B1020]/70 p-4">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <div>
-            <h3 className="font-display text-sm font-semibold text-[#E6EDF7]">
-              Deep pressure (concept)
-            </h3>
-            <p className="text-[11px] text-[#A9B4CC]">
-              Gentle pressure on exhale · Release on inhale
-            </p>
-          </div>
-          <div className="flex items-center gap-2">
-            {!isDeepPressureRunning && (
-              <button
-                type="button"
-                onClick={handleStartDeepPressure}
-                className="inline-flex min-h-[34px] items-center gap-1 rounded-md border border-[#5EEAD4]/50 bg-[#5EEAD4]/15 px-2.5 py-1 text-xs font-semibold text-[#5EEAD4] hover:bg-[#5EEAD4]/25"
-              >
-                <Play className="h-3 w-3 shrink-0" aria-hidden="true" />
-                <span>Start</span>
-              </button>
-            )}
-            <button
-              type="button"
-              onClick={handleStopDeepPressure}
-              aria-label="Stop deep pressure simulation"
-              className={`inline-flex min-h-[34px] items-center gap-1.5 rounded-md border px-2.5 py-1 text-xs font-semibold transition-colors ${
-                isDeepPressureRunning
-                  ? 'border-[#F87171]/70 bg-[#F87171] text-[#0B1020] hover:opacity-90'
-                  : 'border-[#253054] bg-[#141B33] text-[#A9B4CC] hover:text-[#E6EDF7]'
-              }`}
-            >
-              <Square className="h-3 w-3 shrink-0 fill-current" aria-hidden="true" />
-              <span>Stop</span>
-            </button>
-          </div>
+        <div>
+          <h3 className="font-display text-sm font-semibold text-[#E6EDF7]">
+            Deep pressure (concept)
+          </h3>
+          <p className="text-[11px] text-[#A9B4CC]">
+            Gentle pressure on exhale · Release on inhale
+          </p>
         </div>
 
         {/* Vest Outline Animation + Pressure Gauge */}
@@ -411,7 +387,7 @@ export function CountermeasuresPanel({
               <span className="text-[#A9B4CC]">State</span>
               <span
                 className={`font-mono font-semibold ${
-                  !isDeepPressureRunning
+                  !isSessionRunning
                     ? 'text-[#A9B4CC]'
                     : activePressureState === 'Inflating'
                       ? 'text-[#5EEAD4]'
@@ -420,7 +396,7 @@ export function CountermeasuresPanel({
                         : 'text-[#E6EDF7]'
                 }`}
               >
-                {isDeepPressureRunning ? activePressureState : 'Stopped (Releasing)'}
+                {isSessionRunning ? activePressureState : 'Releasing'}
               </span>
             </div>
 
@@ -457,7 +433,7 @@ export function CountermeasuresPanel({
         </div>
       </div>
 
-      {/* taVNS stimulation (concept) - Only taVNS refers to the vagus nerve */}
+      {/* taVNS stimulation (concept) - Always idle/concept, no intensity controls */}
       <div className="flex items-center justify-between rounded-lg border border-[#253054] bg-[#0B1020]/60 px-3.5 py-2.5">
         <div className="flex items-start gap-2.5">
           <Zap className="mt-0.5 h-4 w-4 shrink-0 text-[#A78BFA]" aria-hidden="true" />
@@ -470,22 +446,9 @@ export function CountermeasuresPanel({
             </div>
           </div>
         </div>
-        <span
-          className={`inline-flex items-center gap-1.5 font-mono text-xs font-semibold ${
-            countermeasuresActive ? 'text-[#5EEAD4]' : 'text-[#A9B4CC]'
-          }`}
-        >
-          {countermeasuresActive ? (
-            <>
-              <CheckCircle2 className="h-4 w-4 shrink-0" aria-hidden="true" />
-              <span>active</span>
-            </>
-          ) : (
-            <>
-              <CircleDashed className="h-4 w-4 shrink-0" aria-hidden="true" />
-              <span>idle</span>
-            </>
-          )}
+        <span className="inline-flex items-center gap-1.5 font-mono text-xs font-semibold text-[#A9B4CC]">
+          <CircleDashed className="h-4 w-4 shrink-0" aria-hidden="true" />
+          <span>idle</span>
         </span>
       </div>
 
@@ -499,9 +462,9 @@ export function CountermeasuresPanel({
           <p className="mt-1 text-xs leading-relaxed text-[#A9B4CC]">
             {countermeasuresNotEffective
               ? 'Signals are locked against recovery to demonstrate the 72-hour refractory escalation.'
-              : anyCountermeasureRunning
+              : isSessionRunning
                 ? 'Active: heart rate and respiration are drifting gradually toward baseline while HRV rises.'
-                : 'Standby: heart rate, respiration, and HRV respond gradually when a countermeasure is active.'}
+                : 'Standby: heart rate, respiration, and HRV respond gradually when a session is active.'}
           </p>
         </div>
 
