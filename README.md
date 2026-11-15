@@ -43,10 +43,11 @@ npm run dev
 
 ## Deployment
 
-### Cloudflare Pages (Primary)
-- **Framework preset:** Vite
+### Cloudflare Workers (Primary)
+- **Configuration:** `wrangler.jsonc` (`main: "src/worker.ts"`, `assets.directory: "./dist"`, `run_worker_first: ["/api/*"]`)
 - **Build command:** `npm run build`
-- **Build output directory:** `dist`
+- **Deploy command:** `npx wrangler deploy`
+- **Optional secret:** `NASA_API_KEY` in Worker **Variables and Secrets** (falls back to `DEMO_KEY` if unset)
 
 ### GitHub Pages (Backup)
 A ready-to-use workflow is included at `.github/workflows/deploy.yml` (with `base: './'` in `vite.config.ts`). Enable **Settings → Pages → Source: GitHub Actions** and push to `main`.
