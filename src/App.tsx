@@ -264,6 +264,8 @@ export default function App() {
         <footer className="border-t border-[#253054] bg-[#0E1428] py-4">
           <div className="mx-auto max-w-[1440px] px-4 text-center text-xs text-[#A9B4CC] sm:px-6 lg:px-8">
             Prototype. Crew data is simulated. Not a medical device.
+            {' · '}
+            <a href="./proyecto/" className="underline hover:text-[#5EEAD4]">Project: video, slides and details</a>
           </div>
         </footer>
       </div>
